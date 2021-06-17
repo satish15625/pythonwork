@@ -1,0 +1,257 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+<div class="header" id="home">
+ 
+
+    <!--- include top header-->
+    {% include "include/topheader.html" %}
+    <!--- end top header-->
+
+    <!-- header-middle -->
+    <div class="header-middle">
+        <div class="container">
+            <div class="logof-w3-agile">
+                <h1><a href="/">SkillUp</a></h1>
+            </div>
+            <div class="searchf-w3-agileits-headr">
+                <form action="/"  type="get">
+                    <input type="search" name="Search" placeholder="Search for a Product..." required="">
+                    <button type="submit" class="btn btn-default search" aria-label="Left Align">
+                <i class="fa fa-search" aria-hidden="true"> </i>
+            </button>
+                </form>
+            </div>
+            <div class="cart-mainf">
+                <a class="shop" href="/shop/">Shop Now</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!--// header-middle -->
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+        </div>
+
+        <div class="collapse navbar-collapse js-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown mega-dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <span class="caret"></span></a>
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 1</li>
+                                <li><a href="/course/">Core IT Skills</a></li>
+                                <li><a href="/course/">Data Science</a></li>
+                                <li><a href="/course/">Databases</a></li>
+                                <li><a href="/course/">Game Development</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 2</li>
+                                <li><a href="/course/">Hardware</a></li>
+                                <li><a href="/course/">IT Management</a></li>
+                                <li><a href="/course/">Mobile Apps</a></li>
+                                <li><a href="/course/">Network And Security</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 3</li>
+                                <li><a href="/course/">Core IT Skills</a></li>
+                                <li><a href="/course/">Data Science</a></li>
+                                <li><a href="/course/">Databases</a></li>
+                                <li><a href="/course/">Game Development</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Blog Styles</li>
+                                <li><a href="/blog1/">Simple</a></li>
+                                <li><a href="/blog4/">Creative</a></li>
+                                <!-- <li><a href="/blog1/">2-col Grids</a></li> -->
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown mega-dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Marketing <span class="caret"></span></a>
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 1</li>
+                                <li><a href="/marketing/">Digital Marketing</a></li>
+                                <li><a href="/marketing/">Marketing Management</a></li>
+                                <li><a href="/marketing/">Public Relations</a></li>
+                                <li><a href="/marketing/">Social Media Marketing</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 2</li>
+                                <li><a href="/marketing/">Digital Marketing</a></li>
+                                <li><a href="/marketing/">Marketing Management</a></li>
+                                <li><a href="/marketing/">Public Relations</a></li>
+                                <li><a href="/marketing/">Social Media Marketing</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 3</li>
+                                <li><a href="/marketing/">Digital Marketing</a></li>
+                                <li><a href="/marketing/">Marketing Management</a></li>
+                                <li><a href="/marketing/">Public Relations</a></li>
+                                <li><a href="/marketing/">Social Media Marketing</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Blog Styles</li>
+                                <li><a href="/blog1/">Simple</a></li>
+                                <li><a href="/blog1/">Creative</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown mega-dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <span class="caret"></span></a>
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 1</li>
+                                <li><a href="/development/">Web Development</a></li>
+                                <li><a href="/development/">Mobile Apps</a></li>
+                                <li><a href="/development/">Programming Languages</a></li>
+                                <li><a href="/development/">Game Development</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 2</li>
+                                <li><a href="/development/">Databases</a></li>
+                                <li><a href="/development/">Software Testing</a></li>
+                                <li><a href="/development/">Software Engineering</a></li>
+                                <li><a href="/development/">Development Tools</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 3</li>
+                                <li><a href="/development/">Web Development</a></li>
+                                <li><a href="/development/">Mobile Apps</a></li>
+                                <li><a href="/development/">Programming Languages</a></li>
+                                <li><a href="/development/">Game Development</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Blog Styles</li>
+                                <li><a href="/blog1/">Simple</a></li>
+                                <li><a href="/blog1/">Creative</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown mega-dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business <span class="caret"></span></a>
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 1</li>
+                                <li><a href="/business/">Communications</a></li>
+                                <li><a href="/business/">E-Commerce</a></li>
+                                <li><a href="/business/">Entrepreneurship</a></li>
+                                <li><a href="/business/">Finance</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 2</li>
+                                <li><a href="/business/">Human Resources</a></li>
+                                <li><a href="/business/">Leadership & Management</a></li>
+                                <li><a href="/business/">Operations</a></li>
+                                <li><a href="/business/">Project Management</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 3</li>
+                                <li><a href="/business/">Sales</a></li>
+                                <li><a href="/business/">Tourism & Hospitality</a></li>
+                                <li><a href="/business/">Strategy</a></li>
+                                <li><a href="/business/">Business Law</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Blog Styles</li>
+                                <li><a href="/blog1/">Simple</a></li>
+                                <li><a href="/blog1/">Creative</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown mega-dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Maths <span class="caret"></span></a>
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 1</li>
+                                <li><a href="/maths/">Algebra</a></li>
+                                <li><a href="/maths/">Calculus</a></li>
+                                <li><a href="/maths/">Core Maths Skills</a></li>
+                                <li><a href="/maths/">Geometry</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 2</li>
+                                <li><a href="/maths/">Probability & Statistics</a></li>
+                                <li><a href="/maths/">Series and Sequences</a></li>
+                                <li><a href="/maths/">Calculus</a></li>
+                                <li><a href="/maths/">Core Maths Skills</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Type 3</li>
+                                <li><a href="/maths/">All Test Prep</a></li>
+                                <li><a href="/maths/">Test Taking Skills</a></li>
+                                <li><a href="/maths/">Educational Development</a></li>
+                                <li><a href="/maths/">Core Maths Skills</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3 col-sm-/maths/col-xs-6">
+                            <ul>
+                                <li class="dropdown-header">Blog Styles</li>
+                                <li><a href="/blog1/">Simple</a></li>
+                                <li><a href="/blog1/">Creative</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+        <!-- /.nav-collapse -->
+    </nav>
+
+    <!-- bootstrap-pop-up -->
+    
+        
+
+</div>
+{% endblock %}

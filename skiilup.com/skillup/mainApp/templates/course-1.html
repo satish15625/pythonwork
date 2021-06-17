@@ -1,0 +1,898 @@
+<!--
+Author: codensity
+Author URL: http://codensity.in
+License: Creative Commons groundCoding
+License URL: http://groundCoding.com
+-->
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="{Static 'css/easy-responsive-tabs1.css' %}" rel='stylesheet' type='text/css' />
+	<!-- //services -->
+	<link href="{% static 'css/single.css' %}" type="text/css" rel="stylesheet" media="all">
+	<!--// Responsive-tabs -->
+</head>
+
+<body>
+	<!-- header -->
+	{% include "include/header.html" %}
+	<!-- banner -->
+
+	<div class="demo-bg">
+		<div class="container">
+			<h3 class="demo-title">a revolution in
+				<span>online learning</span>
+			</h3>
+			<p class="demo-ibg-txt">courses</p>
+		</div>
+	</div>
+	<!-- breadcrumbs -->
+	<div class="demo-header">
+		<div class="container-fluid">
+			<ul class="inner_breadcrumb">
+				<li>
+					<a href="index.html">Home</a>
+					<span>| |</span>
+				</li>
+				<li class="active">
+					<a href="courses.html">Courses</a>
+					<span>| |</span>
+				</li>
+				<li>Top Most Popular Courses</li>
+			</ul>
+
+		</div>
+	</div>
+	<!-- //breadcrumbs -->
+
+	<div class="demo-main demo-sec">
+		<div class="containers">
+			<div class="demo-content-left col-md-8">
+				<h4 class="demo-title">flexible options
+					<span>to fit your schedule</span>
+				</h4>
+				<!-- <h4><span class="demo-line"></span>e-learning<span class="demo-line"></span></h4> -->
+				<div class="demo-left">
+					<iframe src="https://www.youtube.com/embed/MYnnm8Klp6o" allowfullscreen></iframe>
+				</div>
+				<div id="verticalTab">
+					<ul class="resp-tabs-list">
+						<li>
+							<div class="tab1">
+								<h3>overview</h3>
+							</div>
+						</li>
+						<li>
+							<div class="tab1">
+								<h3>live classes</h3>
+							</div>
+						</li>
+						<li>
+							<div class="tab1">
+								<h3>description</h3>
+							</div>
+						</li>
+
+					</ul>
+					<div class="resp-tabs-container">
+						<div class="tabs-right1">
+							<div id="test" class="tree">
+								<ul>
+									<li class="parent_li">
+										<span class="tree-parent">course</span>
+										<ul>
+											<li class="sub-parent">
+												<span title="Additional information" class="childnode">lectures</span>
+												<ul>
+													<li class="parent_li">
+														<span title="Additional information">objectives</span>
+													</li>
+													<li class="parent_li">
+														<span title="Additional information">videos</span>
+														<ul></ul>
+													</li>
+													<li class="parent_li">
+														<span title="Additional information">slides</span>
+														<ul></ul>
+													</li>
+												</ul>
+											</li>
+											<li class="sub-parent">
+												<span title="Additional information" class="childnode">assignments</span>
+												<ul>
+													<li class="parent_li">
+														<span title="Additional information">online discussions</span>
+														<ul></ul>
+													</li>
+													<li class="sub-parent">
+														<span title="Additional information" class="grandchild">additional resources</span>
+
+														<ul>
+															<li class="parent_li">
+																<span title="Additional information">smart course plans</span>
+																<ul></ul>
+															</li>
+															<li class="parent_li">
+																<span title="Additional information">Courses</span>
+																<ul></ul>
+															</li>
+															<li class="parent_li">
+																<span title="Additional information">learning path</span>
+																<ul>
+																	<li class="parent_li">
+																		<span title="Additional information" class="grand-child2">Tests</span>
+																		<ul>
+																			<li class="parent_li">
+																				<span title="Additional information">sample papers</span>
+																				<ul></ul>
+																			</li>
+																			<li class="parent_li">
+																				<span title="Additional information">live test series</span>
+																				<ul></ul>
+																			</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="tabs-right1">
+							<iframe src="https://www.youtube.com/embed/MYnnm8Klp6o" allowfullscreen></iframe>
+						</div>
+						<div class="tabs-right1">
+							<h6>what will you learn ?</h6>
+							<div class="about-main">
+								<div class="service-grids">
+									<div class="col-md-4 col-sm-4 col-xs-4 services-head">
+										<span class="fa fa-check-square-o" aria-hidden="true"></span>
+									</div>
+									<div class="col-md-8 col-sm-8 col-xs-8 services-text">
+										<h4>Heading1</h4>
+										<p>Donec libero dui, scelerisque ac augue id, tristique ullamcorper elit. Nam ultrices, adipiscing aliquet.</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="service-grids">
+									<div class="col-md-4 col-sm-4 col-xs-4 services-head">
+										<span class="fa fa-pie-chart" aria-hidden="true"></span>
+									</div>
+									<div class="col-md-8 col-sm-8 col-xs-8 services-text">
+										<h4>Heading2</h4>
+										<p>Donec libero dui, scelerisque ac augue id, tristique ullamcorper elit. Nam ultrices, adipiscing aliquet.</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="service-grids">
+									<div class="col-md-4 col-sm-4 col-xs-4 services-head">
+										<span class="fa fa-paper-plane-o" aria-hidden="true"></span>
+									</div>
+									<div class="col-md-8 col-sm-8 col-xs-8 services-text">
+										<h4>Heading3</h4>
+										<p>Donec libero dui, scelerisque ac augue id, tristique ullamcorper elit. Nam ultrices, adipiscing aliquet.</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="service-grids">
+									<div class="col-md-4 col-sm-4 col-xs-4 services-head">
+										<span class="fa fa-trello" aria-hidden="true"></span>
+									</div>
+									<div class="col-md-8 col-sm-8 col-xs-8 services-text">
+										<h4>Heading4</h4>
+										<p>Donec libero dui, scelerisque ac augue id, tristique ullamcorper elit. Nam ultrices, adipiscing aliquet.</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<!-- //services -->
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-md-4 demo-right">
+				<div class="newsletter">
+					<h4 class="demo-trial">Online Courses From Top Universities.</h4>
+					<a class="demo-btn" href="/video/">Start Your Free Trial</a>
+
+				</div>
+				<div class="demo-course">
+					<h4 class="demo-trial">related courses</h4>
+					<div class="demo-desc">
+						<div class="col-md-4 col-sm-4 col-xs-4 demo-desc-left">
+							<a href="course-2.html">
+								<img src="{% static 'images/mf5.jpg' %}" class="img-responsive" alt="">
+							</a>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 demo-desc-right">
+							<div class="demo-desc-text">
+								<a href="course-2.html">
+									<h4>course title</h4>
+								</a>
+								<p>The standard chunk of Lorem Ipsum used since the 1500s..</p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="demo-desc">
+						<div class="col-md-4 col-sm-4 col-xs-4 demo-desc-left">
+							<a href="course-3.html">
+								<img src="{% static 'images/mf2.jpg' %}" class="img-responsive" alt="">
+							</a>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 demo-desc-right">
+							<div class="demo-desc-text">
+								<a href="course-3.html">
+									<h4>course title</h4>
+								</a>
+								<p>The standard chunk of Lorem Ipsum used since the 1500s..</p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="demo-desc">
+						<div class="col-md-4 col-sm-4 col-xs-4 demo-desc-left">
+							<a href="course-4.html">
+								<img src="{% static 'images/mf3.jpg' %}" class="img-responsive" alt="">
+							</a>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 demo-desc-right">
+							<div class="demo-desc-text">
+								<a href="course-4.html">
+									<h4>course title</h4>
+								</a>
+								<p>The standard chunk of Lorem Ipsum used since the 1500s..</p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="demo-desc">
+						<div class="col-md-4 col-sm-4 col-xs-4 demo-desc-left">
+							<a href="course-5.html">
+								<img src="{% static 'images/mf4.jpg' %}" class="img-responsive" alt="">
+							</a>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 demo-desc-right">
+							<div class="demo-desc-text">
+								<a href="course-5.html">
+									<h4>course title</h4>
+								</a>
+								<p>The standard chunk of Lorem Ipsum used since the 1500s..</p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="single-side-bar">
+					<div class="first_half">
+						<div class="list_vertical">
+							<div class="accordation_menu">
+								<div>
+									<input id="label-1" name="lida" type="radio" checked/>
+									<label for="label-1" id="item1">contents
+									</label>
+									<div class="content" id="a1">
+										<div class="scrollbar" id="style-1">
+											<div class="demo-accs">
+												<div class="demo-acc">
+													<a class="acc-title" href="#">
+														<span class="fa fa-pencil-square-o" aria-hidden="true"></span>Links that hold content</a>
+												</div>
+												<div class="demo-acc">
+													<a class="acc-title" href="#">
+														<span class="fa fa-pencil-square-o" aria-hidden="true"></span>Links that hold content</a>
+												</div>
+												<div class="demo-acc">
+													<a class="acc-title" href="#">
+														<span class="fa fa-pencil-square-o" aria-hidden="true"></span>Links that hold content</a>
+												</div>
+												<div class="demo-acc">
+													<a class="acc-title" href="#">
+														<span class="fa fa-pencil-square-o" aria-hidden="true"></span>Links that hold content</a>
+												</div>
+												<div class="demo-acc">
+													<a class="acc-title" href="#">
+														<span class="fa fa-pencil-square-o" aria-hidden="true"></span>Links that hold content</a>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<input id="label-3" name="lida" type="radio" />
+									<label for="label-3" id="item3">FAQ
+									</label>
+									<div class="content" id="a3">
+										<div class="scrollbar" id="style-2">
+											<div class="demo-accs">
+												<div class="demo-acc">
+													<a class="acc-title" href="#">
+														<span class="fa fa-angle-double-right" aria-hidden="true"></span>is lorem ipsum dummy?</a>
+												</div>
+												<div class="demo-acc">
+													<a class="acc-title" href="#">
+														<span class="fa fa-angle-double-right" aria-hidden="true"></span>is lorem ipsum dummy?</a>
+												</div>
+												<div class="demo-acc">
+													<a class="acc-title" href="#">
+														<span class="fa fa-angle-double-right" aria-hidden="true"></span>is lorem ipsum dummy?</a>
+												</div>
+												<div class="demo-acc">
+													<a class="acc-title" href="#">
+														<span class="fa fa-angle-double-right" aria-hidden="true"></span>lorem ipsum is dummy?</a>
+												</div>
+												<div class="demo-acc">
+													<a class="acc-title" href="#">
+														<span class="fa fa-angle-double-right" aria-hidden="true"></span>is lorem ipsum dummy?</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<input id="label-2" name="lida" type="radio" />
+										<label for="label-2" id="item2">
+											<i class="icon-leaf" id="i2"></i>excersise files
+											<i class="icon-plus-sign i-right1"></i>
+											<i class="icon-minus-sign i-right2"></i>
+										</label>
+										<div class="content" id="a2">
+											<div class="scrollbar" id="style-3">
+												<div class="force-overflow">
+													<div class="demo-accs">
+														<div class="post-text">
+															<ul>
+																<li>contains supporting documents
+																	<a class="span_link" href="#">
+																		<span class="fa fa-file-archive-o" aria-hidden="true" title="Download"></span>
+																	</a>
+																</li>
+																<li>(x MB)</li>
+															</ul>
+														</div>
+														<div class="post-text">
+															<ul>
+																<li> contains supporting documents
+																	<a class="span_link" href="#">
+																		<span class="fa fa-file-archive-o" aria-hidden="true" title="Download"></span>
+																	</a>
+																</li>
+																<li>(x MB)</li>
+															</ul>
+														</div>
+														<div class="post-text">
+															<ul>
+																<li>contains supporting documents
+																	<a class="span_link" href="#">
+																		<span class="fa fa-file-archive-o" aria-hidden="true" title="Download"></span>
+																	</a>
+																</li>
+																<li>(x MB)</li>
+															</ul>
+														</div>
+														<div class="post-text">
+															<ul>
+																<li>contains supporting documents
+																	<a class="span_link" href="#">
+																		<span class="fa fa-file-archive-o" aria-hidden="true" title="Download"></span>
+																	</a>
+																</li>
+																<li>(x MB)</li>
+															</ul>
+														</div>
+														<div class="post-text">
+															<ul>
+																<li>contains supporting documents
+																	<a class="span_link" href="#">
+																		<span class="fa fa-file-archive-o" aria-hidden="true" title="Download"></span>
+																	</a>
+																</li>
+																<li>(x MB)</li>
+															</ul>
+														</div>
+														<div class="post-text">
+															<ul>
+																<li>contains supporting documents
+																	<a class="span_link" href="#">
+																		<span class="fa fa-file-archive-o" aria-hidden="true" title="Download"></span>
+																	</a>
+																</li>
+																<li>(x MB)</li>
+															</ul>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="demo-skills">
+						<h4 class="demo-trail">skills covered in course</h4>
+						<ul>
+							<li>
+								<span class="fa fa-check-square-o" aria-hidden="true"></span>courses grouped by subject</li>
+							<li>
+								<span class="fa fa-check-square-o" aria-hidden="true"></span>individual online course</li>
+							<li>
+								<span class="fa fa-check-square-o" aria-hidden="true"></span>master program</li>
+							<li>
+								<span class="fa fa-check-square-o" aria-hidden="true"></span>fully certified courses</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="form-demo">
+				<div class="form-inner text-center">
+					<fieldset>
+						<legend>join the course</legend>
+
+						<ul class="form-demo-list">
+							<li>
+								<span class="fa fa-check" aria-hidden="true"></span>lorem ipsum is a dummy text </li>
+							<li>
+								<span class="fa fa-check" aria-hidden="true"></span>lorem ipsum is a dummy text </li>
+							<li>
+								<span class="fa fa-check" aria-hidden="true"></span>lorem ipsum is a dummy text </li>
+						</ul>
+						<a href="#" data-toggle="modal" data-target="#myModal">sign up</a>
+					</fieldset>
+				</div>
+				<h6>most advanced solution for
+					<span class="demo-ftxt"> e-learning!</span>
+				</h6>
+			</div>
+			<div class="demo-inst demo-sec">
+				<h6 class="sec-title">about the
+					<span>instructor</span>
+				</h6>
+				<div class="col-md-5 left-instr">
+					<div class="col-md-5 demo-inst-left">
+						<img src="{% static 'images/i1.png" class="img-responsive" alt="" />
+						<div class="inst-txt">
+							<h5>Helen L. Odom</h5>
+							<p>designation in detail</p>
+						</div>
+					</div>
+					<div class="col-md-7 demo-inst-center ">
+						<ul>
+							<li>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<span>4.7</span> average rating</li>
+							<li>
+								<i class="fa fa-comment-o" aria-hidden="true"></i>
+								<span>75,000</span> reviews</li>
+							<li>
+								<i class="fa fa-play" aria-hidden="true"></i>
+								<span>19</span> courses</li>
+							<li>
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<span>34,826</span> students</li>
+
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-7 demo-inst-right">
+					<h6>Best Lead Educator</h6>
+					<p>Nunc gravida sagittis nunc, pellentesque vehicula lacus viverra quis. Fusce ultricies velit nibh, ut aliquet elit hendrerit
+						ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper augue iaculis fermentum ultrices. Nullam
+						nec faucibus odio. Donec at dui ut tellus pharetra congue a at tellus. Sed facilisis est et est eleifend, a iaculis
+						massa maximus. Pellentesque condimentum lorem maximus justo blandit eleifend.
+					</p>
+					<a href="#">view more</a>
+				</div>
+
+				<div class="clearfix"></div>
+
+			</div>
+			<!-- reviews -->
+			<div class="demo-sec">
+				<div class="reviews col-md-8 col-sm-8">
+					<h6 class="sec-title">student
+						<span>review</span>
+					</h6>
+					<!-- review grid -->
+					<div class="row blockquote review-item">
+						<div class="col-md-3 col-sm-3 col-xs-3 text-center review-left">
+							<img class="rounded-circle reviewer" src="{% static 'images/r.jpg' %}" alt="">
+							<div class="caption">
+								<small>by
+									<a href="#joe">Jones</a>
+								</small>
+							</div>
+
+						</div>
+						<div class="col-md-9 col-sm-9 col-xs-9 review-right">
+							<h4>Here goes your review title</h4>
+							<ul class="ratebox">
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star-half-o" aria-hidden="true"></span>
+								</li>
+							</ul>
+							<p class="review-text">Fusce ultricies velit nibh, ut aliquet elit hendrerit ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Ut ullamcorper augue iaculis fermentum ultrices. Nullam nec faucibus odio. Donec at dui ut tellus pharetra congue
+								a at tellus.</p>
+							<small class="review-date">March 26, 2017</small>
+						</div>
+					</div>
+					<!-- //review grid -->
+					<!-- review grid -->
+					<div class="row blockquote review-item">
+						<div class="col-md-3 col-sm-3 col-xs-3 text-center review-left">
+							<img class="rounded-circle reviewer" src="{% static 'images/r.jpg' %}" alt="">
+							<div class="caption">
+								<small>by
+									<a href="#joe">Rosy</a>
+								</small>
+							</div>
+
+						</div>
+						<div class="col-md-9 col-sm-9 col-xs-9 review-right">
+							<h4>Here goes your review title</h4>
+							<ul class="ratebox">
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star-half-o" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star-o" aria-hidden="true"></span>
+								</li>
+							</ul>
+							<p class="review-text">Fusce ultricies velit nibh, ut aliquet elit hendrerit ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Ut ullamcorper augue iaculis fermentum ultrices. Nullam nec faucibus odio. Donec at dui ut tellus pharetra congue
+								a at tellus.</p>
+							<small class="review-date">March 26, 2017</small>
+						</div>
+					</div>
+					<!-- //review grid -->
+					<!-- review grid -->
+					<div class="row blockquote review-item">
+						<div class="col-md-3 col-sm-3 col-xs-3 text-center review-left">
+							<img class="rounded-circle reviewer" src="{% static 'images/r.jpg' %}" alt="">
+							<div class="caption">
+								<small>by
+									<a href="#joe">Jack</a>
+								</small>
+							</div>
+
+						</div>
+						<div class="col-md-9 col-sm-9 col-xs-9 review-right">
+							<h4>Here goes your review title</h4>
+							<ul class="ratebox">
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star-o" aria-hidden="true"></span>
+								</li>
+							</ul>
+							<p class="review-text">Fusce ultricies velit nibh, ut aliquet elit hendrerit ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Ut ullamcorper augue iaculis fermentum ultrices. Nullam nec faucibus odio. Donec at dui ut tellus pharetra congue
+								a at tellus.</p>
+							<small class="review-date">March 26, 2017</small>
+						</div>
+					</div>
+					<!-- //review grid -->
+					<!-- review grid -->
+					<div class="row blockquote review-item">
+						<div class="col-md-3 col-sm-3 col-xs-3 text-center review-left">
+							<img class="rounded-circle reviewer" src="{% static 'images/r.jpg' %}" alt="">
+							<div class="caption">
+								<small>by
+									<a href="#joe">Ben</a>
+								</small>
+							</div>
+
+						</div>
+						<div class="col-md-9 col-sm-9 col-xs-9 review-right">
+							<h4>Here goes your review title</h4>
+							<ul class="ratebox">
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star-o" aria-hidden="true"></span>
+								</li>
+								<li>
+									<span class="fa fa-star-o" aria-hidden="true"></span>
+								</li>
+
+							</ul>
+							<p class="review-text">Fusce ultricies velit nibh, ut aliquet elit hendrerit ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Ut ullamcorper augue iaculis fermentum ultrices. Nullam nec faucibus odio. Donec at dui ut tellus pharetra congue
+								a at tellus.</p>
+							<small class="review-date">March 26, 2017</small>
+						</div>
+					</div>
+					<!-- //review grid -->
+				</div>
+				<!-- //reviews -->
+				<!-- Materials -->
+				<div class="col-md-4 col-sm-4 sidebar-demo">
+					<h6 class="sec-title1">you can also
+						<span>refer</span>
+					</h6>
+					<div class="carousel slide materialf-slider" id="myCarousel1">
+						<div class="carousel-inner">
+							<div class="item active">
+								<ul class="thumbnails">
+									<li class="demo-car">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/sp1.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description About Course</h4>
+												<p>Clayton Barton</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6 demo-sidecourse">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/mf2.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description</h4>
+												<p>Niel Fontine</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6 demo-sidecourse">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/mf3.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description</h4>
+												<p>Jose portilla</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6 demo-sidecourse">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/mf4.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description</h4>
+												<p>Niel Fontine</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6 demo-sidecourse">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/mf5.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description</h4>
+												<p>Jose portilla</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6 demo-sidecourse">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/mf2.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description</h4>
+												<p>Niel Fontine</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6 demo-sidecourse">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/mf6.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description</h4>
+												<p>Jose portilla</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- /Slide1 -->
+							<div class="item">
+								<ul class="thumbnails">
+									<li class="demo-car">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/sp1.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description About Course</h4>
+												<p>Clayton Barton</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6 demo-sidecourse">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/mf4.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description</h4>
+												<p>Niel Fontine</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6 demo-sidecourse">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/mf5.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description</h4>
+												<p>Jose portilla</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6 demo-sidecourse">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/mf6.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description</h4>
+												<p>Niel Fontine</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6 demo-sidecourse">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/mf3.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description</h4>
+												<p>Jose portilla</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6 demo-sidecourse">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/mf2.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description</h4>
+												<p>Niel Fontine</p>
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6 demo-sidecourse">
+										<div class="fff">
+											<div class="thumbnail">
+												<a href="#">
+													<img src="{% static 'images/mf3.jpg' %}" alt="">
+												</a>
+											</div>
+											<div class="caption">
+												<h4>Description</h4>
+												<p>Jose portilla</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- /Slide3 -->
+						</div>
+						<nav>
+							<ul class="control-box pager">
+								<li>
+									<a data-slide="prev" href="#myCarousel1" class="">
+										<i class="glyphicon glyphicon-chevron-left"></i>
+									</a>
+								</li>
+								<li>
+									<a data-slide="next" href="#myCarousel1" class="">
+										<i class="glyphicon glyphicon-chevron-right"></i>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- /.control-box -->
+					</div>
+					<!-- /#myCarousel -->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<!-- //Materials-->
+		</div>
+	</div>
+	<!-- content-section-ends-here -->
+		<!-- footer -->
+		{% include "include/footer.html" %}
+		<!-- //footer -->
+	
+		<!-- js -->
+	
+		
+	</body>
+	
+	</html>
+	{% endblock %}

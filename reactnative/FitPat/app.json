@@ -1,0 +1,12 @@
+{
+  "name": "FitPat",
+  "displayName": "FitPat",
+  "expo": {
+    "name": "FitPat",
+    "slug": "FitPat",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

@@ -1,0 +1,542 @@
+<!--
+Author: codensity
+Author URL: http://codensity.in
+License: Creative Commons groundCoding
+License URL: http://groundCoding.com
+-->
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+	<!-- header -->
+	{% include "include/header.html" %}
+
+
+	<!-- banner -->
+	<div class="innerf-banner">
+	</div>
+	<!--//banner -->
+	<!-- Page details -->
+	<div class="services-agile-breadcrumb">
+		<div class="inner_breadcrumb">
+			<ul class="short_ls">
+				<li>
+					<a href="index.html">Home</a>
+					<span>| |</span>
+				</li>
+				<li>Shop</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //Page details -->
+	<!-- Shop -->
+	<div class="innerf-pages">
+		<div class="container">
+			<!-- product right -->
+			<div class="left-ads-display col-md-9">
+				<div class="wrapper_top_shop">
+					<div class="shop-f-top">
+						<img src="{% static 'images/shop.jpg' %}" alt="">
+					</div>
+					<div class="clearfix"></div>
+					<!-- product-sec1 -->
+					<div class="product-sec1">
+						<!--/mens-->
+						<div class="col-md-4 product-men">
+							<div class="product-edu-info edu">
+								<div class="thumbnail">
+									<a href="shop_single.html"><img src="{% static 'images/mf1.jpg' %}" alt=""></a>
+									<p><span class="fa fa-hand-o-down" aria-hidden="true"></span>Course Name</p>
+								</div>
+								<div class="caption">
+									<h4>Description About Study Material</h4>
+									<p>Clayton Barton</p>
+									<div class="matrlf-mid">
+										<h6><span>$</span> 100.00</h6>
+										<ul class="rating">
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star gray-star" aria-hidden="true"></span></a></li>
+										</ul>
+										<div class="clearfix"> </div>
+									</div>
+									<form action="#" method="post">
+										<input type="hidden" name="cmd" value="_cart">
+										<input type="hidden" name="add" value="1">
+										<input type="hidden" name="edu_item" value="Book1">
+										<input type="hidden" name="amount" value="100.00">
+										<button type="submit" class="edu-cart pedu-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+										<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men">
+							<div class="product-edu-info edu">
+								<div class="thumbnail">
+									<a href="shop_single.html"><img src="{% static 'images/mf2.jpg' %}" alt=""></a>
+									<p><span class="fa fa-hand-o-down" aria-hidden="true"></span>Course Name</p>
+								</div>
+								<div class="caption">
+									<h4>Description About Study Material</h4>
+									<p>Niel Fontine</p>
+									<div class="matrlf-mid">
+										<h6><span>$</span> 80.00</h6>
+										<ul class="rating">
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star gray-star" aria-hidden="true"></span></a></li>
+										</ul>
+										<div class="clearfix"> </div>
+									</div>
+									<form action="#" method="post">
+										<input type="hidden" name="cmd" value="_cart">
+										<input type="hidden" name="add" value="1">
+										<input type="hidden" name="edu_item" value="Book2">
+										<input type="hidden" name="amount" value="80.00">
+										<button type="submit" class="edu-cart pedu-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+										<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men">
+							<div class="product-edu-info edu">
+								<div class="thumbnail">
+									<a href="shop_single.html"><img src="{% static 'images/mf3.jpg' %}" alt=""></a>
+									<p><span class="fa fa-hand-o-down" aria-hidden="true"></span>Course Name</p>
+								</div>
+								<div class="caption">
+									<h4>Description About Study Material</h4>
+									<p>Jose portilla</p>
+									<div class="matrlf-mid">
+										<h6><span>$</span> 30.00</h6>
+										<ul class="rating">
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star gray-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star gray-star" aria-hidden="true"></span></a></li>
+										</ul>
+										<div class="clearfix"> </div>
+									</div>
+									<form action="#" method="post">
+										<input type="hidden" name="cmd" value="_cart">
+										<input type="hidden" name="add" value="1">
+										<input type="hidden" name="edu_item" value="Book3">
+										<input type="hidden" name="amount" value="30.00">
+										<button type="submit" class="edu-cart pedu-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+										<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- //mens -->
+						<!-- /womens -->
+						<div class="col-md-4 product-men women_two">
+							<div class="product-edu-info edu">
+								<div class="thumbnail">
+									<a href="shop_single.html"><img src="{% static 'images/mf4.jpg' %}" alt=""></a>
+									<p><span class="fa fa-hand-o-down" aria-hidden="true"></span>Course Name</p>
+								</div>
+								<div class="caption">
+									<h4>Description About Study Material</h4>
+									<p>Chris Haroun</p>
+									<div class="matrlf-mid">
+										<h6><span>$</span> 60.00</h6>
+										<ul class="rating">
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star gray-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star gray-star" aria-hidden="true"></span></a></li>
+										</ul>
+										<div class="clearfix"> </div>
+									</div>
+									<form action="#" method="post">
+										<input type="hidden" name="cmd" value="_cart">
+										<input type="hidden" name="add" value="1">
+										<input type="hidden" name="edu_item" value="Book4">
+										<input type="hidden" name="amount" value="60.00">
+										<button type="submit" class="edu-cart pedu-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+										<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men women_two">
+							<div class="product-edu-info edu">
+								<div class="thumbnail">
+									<a href="shop_single.html"><img src="{% static 'images/mf5.jpg' %}" alt=""></a>
+									<p><span class="fa fa-hand-o-down" aria-hidden="true"></span>Course Name</p>
+								</div>
+								<div class="caption">
+									<h4>Description About Study Material</h4>
+									<p>Alex Even</p>
+									<div class="matrlf-mid">
+										<h6><span>$</span> 80.00</h6>
+										<ul class="rating">
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+										</ul>
+										<div class="clearfix"> </div>
+									</div>
+									<form action="#" method="post">
+										<input type="hidden" name="cmd" value="_cart">
+										<input type="hidden" name="add" value="1">
+										<input type="hidden" name="edu_item" value="Book5">
+										<input type="hidden" name="amount" value="80.00">
+										<button type="submit" class="edu-cart pedu-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+										<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men women_two">
+							<div class="product-edu-info edu">
+								<div class="thumbnail">
+									<a href="shop_single.html"><img src="{% static 'images/mf6.jpg' %}" alt=""></a>
+									<p><span class="fa fa-hand-o-down" aria-hidden="true"></span>Course Name</p>
+								</div>
+								<div class="caption">
+									<h4>Description About Study Material</h4>
+									<p>Hadilen de</p>
+									<div class="matrlf-mid">
+										<h6><span>$</span> 60.00</h6>
+										<ul class="rating">
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star gray-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star gray-star" aria-hidden="true"></span></a></li>
+										</ul>
+										<div class="clearfix"> </div>
+									</div>
+									<form action="#" method="post">
+										<input type="hidden" name="cmd" value="_cart">
+										<input type="hidden" name="add" value="1">
+										<input type="hidden" name="edu_item" value="Book6">
+										<input type="hidden" name="amount" value="60.00">
+										<button type="submit" class="edu-cart pedu-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+										<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- //womens -->
+						<!-- /mens -->
+						<div class="col-md-4 product-men">
+							<div class="product-edu-info edu">
+								<div class="thumbnail">
+									<a href="shop_single.html"><img src="{% static 'images/mf1.jpg' %}" alt=""></a>
+									<p><span class="fa fa-hand-o-down" aria-hidden="true"></span>Course Name</p>
+								</div>
+								<div class="caption">
+									<h4>Description About Study Material</h4>
+									<p>Clayton</p>
+									<div class="matrlf-mid">
+										<h6><span>$</span> 70.00</h6>
+										<ul class="rating">
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star gray-star" aria-hidden="true"></span></a></li>
+										</ul>
+										<div class="clearfix"> </div>
+									</div>
+									<form action="#" method="post">
+										<input type="hidden" name="cmd" value="_cart">
+										<input type="hidden" name="add" value="1">
+										<input type="hidden" name="edu_item" value="Book7">
+										<input type="hidden" name="amount" value="70.00">
+										<button type="submit" class="edu-cart pedu-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+										<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men">
+							<div class="product-edu-info edu">
+								<div class="thumbnail">
+									<a href="shop_single.html"><img src="{% static 'images/mf2.jpg' %}" alt=""></a>
+									<p><span class="fa fa-hand-o-down" aria-hidden="true"></span>Course Name</p>
+								</div>
+								<div class="caption">
+									<h4>Description About Study Material</h4>
+									<p>Scott Harris</p>
+									<div class="matrlf-mid">
+										<h6><span>$</span> 50.00</h6>
+										<ul class="rating">
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star gray-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star gray-star" aria-hidden="true"></span></a></li>
+										</ul>
+										<div class="clearfix"> </div>
+									</div>
+									<form action="#" method="post">
+										<input type="hidden" name="cmd" value="_cart">
+										<input type="hidden" name="add" value="1">
+										<input type="hidden" name="edu_item" value="Book8">
+										<input type="hidden" name="amount" value="50.00">
+										<button type="submit" class="edu-cart pedu-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+										<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men">
+							<div class="product-edu-info edu">
+								<div class="thumbnail">
+									<a href="shop_single.html"><img src="{% static 'images/mf3.jpg' %}" alt=""></a>
+									<p><span class="fa fa-hand-o-down" aria-hidden="true"></span>Course Name</p>
+								</div>
+								<div class="caption">
+									<h4>Description About Study Material</h4>
+									<p>Cordebard</p>
+									<div class="matrlf-mid">
+										<h6><span>$</span> 90.00</h6>
+										<ul class="rating">
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+											<li><a href="#"><span class="fa fa-star yellow-star" aria-hidden="true"></span></a></li>
+										</ul>
+										<div class="clearfix"> </div>
+									</div>
+									<form action="#" method="post">
+										<input type="hidden" name="cmd" value="_cart">
+										<input type="hidden" name="add" value="1">
+										<input type="hidden" name="edu_item" value="Book9">
+										<input type="hidden" name="amount" value="90.00">
+										<button type="submit" class="edu-cart pedu-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+										<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- //mens -->
+						<div class="clearfix"></div>
+
+					</div>
+
+					<!-- //product-sec1 -->
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!-- product left -->
+			<div class="side-bar col-md-3">
+				<div class="search-hotel">
+					<h3 class="shopf-sear-headits-sear-head">Search Here..</h3>
+					<form action="#" method="post">
+						<input type="search" placeholder="Book name..." name="search" required="">
+						<input type="submit" value="Search">
+					</form>
+				</div>
+				<!-- price range -->
+				<div class="range">
+					<h3 class="shopf-sear-headits-sear-head">Price range</h3>
+					<ul class="dropdown-menu6">
+						<li>
+
+							<div id="slider-range"></div>
+							<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
+						</li>
+					</ul>
+				</div>
+				<!-- //price range -->
+				<!--preference -->
+				<div class="left-side">
+					<h3 class="shopf-sear-headits-sear-head">Deal Offer On</h3>
+					<ul>
+						<li>
+							<input type="checkbox" class="checked">
+							<span class="span">Marketing</span>
+						</li>
+						<li>
+							<input type="checkbox" class="checked">
+							<span class="span">Business</span>
+						</li>
+
+					</ul>
+				</div>
+				<!-- // preference -->
+				<!-- discounts -->
+				<div class="left-side">
+					<h3 class="shopf-sear-headits-sear-head">Discount</h3>
+					<ul>
+						<li>
+							<input type="checkbox" class="checked">
+							<span class="span">5% or More</span>
+						</li>
+						<li>
+							<input type="checkbox" class="checked">
+							<span class="span">10% or More</span>
+						</li>
+						<li>
+							<input type="checkbox" class="checked">
+							<span class="span">20% or More</span>
+						</li>
+						<li>
+							<input type="checkbox" class="checked">
+							<span class="span">30% or More</span>
+						</li>
+						<li>
+							<input type="checkbox" class="checked">
+							<span class="span">50% or More</span>
+						</li>
+						<li>
+							<input type="checkbox" class="checked">
+							<span class="span">60% or More</span>
+						</li>
+					</ul>
+				</div>
+				<!-- //discounts -->
+				<!-- reviews -->
+				<div class="customer-rev left-side">
+					<h3 class="shopf-sear-headits-sear-head">Customer Review</h3>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<span>5.0</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<span>4.0</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<span>3.5</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<span>3.0</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<span>2.5</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- //reviews -->
+				<!-- deals -->
+				<div class="deal-leftmk left-side">
+					<h3 class="shopf-sear-headits-sear-head">Special Deals</h3>
+					<div class="special-sec1">
+						<div class="col-xs-4 img-deals">
+							<img src="{% static 'images/mf1.jpg' %}" alt="">
+						</div>
+						<div class="col-xs-8 img-deal1">
+							<h3>Lorem ipsum</h3>
+							<a href="shop_single.html">$180.00</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="special-sec1">
+						<div class="col-xs-4 img-deals">
+							<img src="{% static 'images/mf2.jpg' %}" alt="">
+						</div>
+						<div class="col-xs-8 img-deal1">
+							<h3>Consectetur</h3>
+							<a href="shop_single.html">$99.00</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="special-sec1">
+						<div class="col-xs-4 img-deals">
+							<img src="{% static 'images/mf3.jpg' %}" alt="">
+						</div>
+						<div class="col-xs-8 img-deal1">
+							<h3>Adipiscing elit</h3>
+							<a href="shop_single.html">$165.00</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="special-sec1">
+						<div class="col-xs-4 img-deals">
+							<img src="{% static 'images/mf5.jpg' %}" alt="">
+						</div>
+						<div class="col-xs-8 img-deal1">
+							<h3>Mauris ac</h3>
+							<a href="shop_single.html">$225.00</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="special-sec1">
+						<div class="col-xs-4 img-deals">
+							<img src="{% static 'images/mf6.jpg' %}" alt="">
+						</div>
+						<div class="col-xs-8 img-deal1">
+							<h3>Interdum risus</h3>
+							<a href="shop_single.html">$169.00</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<!-- //deals -->
+
+			</div>
+			<!-- //product left -->
+
+			<div class="clearfix"></div>
+
+		</div>
+	</div>
+	<!--// Shop -->
+
+	<!-- footer -->
+	{% include "include/footer.html" %}
+	<!-- //footer -->
+
+	<!-- js -->
+</body>
+
+</html>
+{% endblock %}
