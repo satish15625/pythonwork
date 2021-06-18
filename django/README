@@ -1,0 +1,9 @@
+1.Activate Env
+------------------
+\pathto\env\Scripts\activate   or .\env\Scripts\activate.bat
+
+2. Deactivate Env
+
+    deactivate in env path
+3. run your django app
+
