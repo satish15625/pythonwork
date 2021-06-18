@@ -1,0 +1,133 @@
+###
+#
+# This is the zabbix_db_pre_secondary.yml playbook which is getting executed
+# @host: Secondary_DB_Zabbix
+# 
+# @author: sai
+# @date:
+# @version: 1
+#
+###  
+
+   - setup:
+  # Storing the environment variable 'Admin_Root' in ansible variable Admin_Root  
+   - name: Get Environment variable Admin_Root
+     set_fact:
+       Admin_Root: "{{lookup('env','Admin_Root') }}"
+   - debug:
+    #  msg: "{{Admin_Root}}"
+      msg: "{{ ansible_env.Admin_Root }}/zabbix/Bin/Pre_Check"
+
+# including vars environment.yml
+   # - include_vars: "{{Admin_Root}}/Portal_Scripts/Bin/environment.yml"
+   # - debug:
+   #    msg: "{{Environment}}"
+
+   
+   # - name: debug
+   #   debug:
+   #     msg: "{{ interaction_id }}"
+
+   # - name: Store the interaction id
+   #   lineinfile:
+   #     line: Interaction id is  '{{ interaction_id }}' executed on "{{ ansible_date_time.iso8601 }}"
+   #     path: /tmp/interaction.ini
+   #     insertafter: EOF
+   #   delegate_to: localhost
+
+
+
+
+# # Creating folder structure where the zabbix code will be copied
+#    - name: Create folder structure for Zabbix  
+#      file:
+#        path: "{{Admin_Root}}/zabbix-env/Zabbix_DB_Core"
+#        state: directory
+# ##
+# # Copying the folder and files from localhost /usr/share/mtaas/Zabbix_DB_Core 
+# # to /usr/share/mtaas/zabbix-env/Zabbix_DB_Core
+# ##
+#    - name: Copy the Zabbix Pre-Check scripts
+#      copy:
+#        src: "{{Admin_Root}}/Zabbix_DB_Core/"
+#        dest: "{{Admin_Root}}/zabbix-env/Zabbix_DB_Core"
+
+#Running python Zabbix_DB_prereq.py on @remote server 
+   - name: Zabbix Pre-Check
+     command: python3.7 Zabbix_DB_Precheck.py "Secondary"
+    #  command:  ./Zabbix_DB_prereq
+     args:
+       chdir: "{{ ansible_env.Admin_Root }}/zabbix/Bin/Pre_Check"
+
+
+# Added this for rollback ---------------------------------
+     register: result
+     ignore_errors: yes
+
+   - set_fact:
+       pyresult: "3rr0rC0d3[00{{result.rc}}]"
+
+   - debug:
+       msg: "{{result.stdout_lines[0]}}"
+
+   - set_fact:
+       pyresult: "{{result.stdout_lines[0]}}"
+     when: result.rc == 0
+ 
+
+# # Finding all the files in the output folder
+#    - name: Get files in a folder
+#      find:
+#        paths: "{{Admin_Root}}/zabbix-env/Zabbix_DB_Core/Output"
+#      register: found_files
+
+# # Reading the latest file in the output folder
+#    - name: Get latest file
+#      set_fact:
+#        latest_file: "{{ found_files.files | sort(attribute='mtime',reverse=true) | first }}" 
+
+# # Printing the latest file path 
+#    - name: Print Lastest file name
+#      debug:
+#        var: latest_file.path
+
+# # separating the latest output file's content with comma 
+# # and storing the first column result to 'zabbiz_log' variable
+#    - name: Read the latest log file
+#      shell: cat {{ latest_file.path }} | awk 'BEGIN {FS = ","} ; {print $1}'
+#      register: zabbiz_log
+
+# # priting the 'zabbiz_log' variable value
+#    - name: Displaying the status of Zabbix pre-requisites
+#      debug:
+#        var:   zabbiz_log.stdout_lines
+
+# # copying the 'zabbiz_log' variable value to 'zabbix_pre.result' file
+#    - name: Saving the Zabbix test results
+#      copy:
+#        content: "{{ zabbiz_log.stdout_lines }}"
+#        dest: /tmp/zabbix_pre.result
+#        force: yes
+
+# # creating a json string for zabbix_pre.result and register in zabbix_pre_post
+#    - name: Create a json string for status
+#      shell: cat /tmp/zabbix_pre.result | tr -d '"' | tr -d '[' |tr -d ']'
+#      register: zabbix_pre_post  
+
+# # Storing the output of shell command in  zabbix_db_pf variable   
+#    - name: Validate the Zabbix DB precheck results
+#      shell: cat /tmp/zabbix_pre.result | grep -i fail
+#      register: zabbix_db_pf
+
+#  #### temporairly chnging the rc code to test the flow ## 
+#    - name: Create a marker file in case of DB precheck failures
+#      file:
+#        path: /tmp/cleanup/zabbix_db_p1
+#        state: touch
+#      delegate_to: localhost
+#      when: zabbix_db_pf.rc != 0
+
+#    - meta: end_play
+#      when: zabbix_db_pf.rc  != 0
+  
+#    # - include_tasks: zabbix_db_install.yml

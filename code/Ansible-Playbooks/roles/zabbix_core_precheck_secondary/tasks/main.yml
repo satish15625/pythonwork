@@ -1,0 +1,16 @@
+###
+#
+# This playbook is including zabbix_core_precheck_secondary.yml playbook
+# @host: Secondary_Core_Zabbix
+# 
+# @author: Mohd Danish
+# @date:
+# @version: 1
+#
+###
+
+ # - include_tasks: pre_flight.yml
+
+# including tasks zabbix_core_precheck_secondary.yml
+ - include_tasks: zabbix_core_precheck_secondary.yml
+

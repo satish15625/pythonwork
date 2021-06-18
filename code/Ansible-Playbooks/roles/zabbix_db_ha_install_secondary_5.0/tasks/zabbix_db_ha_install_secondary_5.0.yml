@@ -1,0 +1,53 @@
+###
+#
+# This is the zabbix_db_ha_install_secondary_5.0.yml playbook which is getting executed
+# @host: Secondary_DB_Zabbix
+# 
+# @author: Mohd Danish
+# @date:
+# @version: 1
+#
+###   
+
+
+   # - include_tasks: api.yml
+
+   - setup:
+   - name: Get Environment variable Admin_Root
+     set_fact:
+       Admin_Root: "{{lookup('env','Admin_Root') }}"
+   - debug:
+      msg: "{{Admin_Root}}"
+
+# including vars environment.yml
+   - include_vars: "{{Admin_Root}}/Portal_Scripts/Bin/environment.yml"
+   - debug:
+       msg: Zabbix DB precheck passed on "{{ ansible_hostname }}"
+   - set_fact:
+       db_ip: "{{ ansible_default_ipv4.address }}"
+       cacheable: true
+
+   - name: Print the name of DB node
+     set_fact:
+       primary_db_host: "{{ item }}" 
+     with_items:
+       - "{{ groups['Primary_DB_Zabbix'] }}"
+
+# Creating folder structure where the zabbix code will be copied
+   - name: Create folder structure for Zabbix  
+     file:
+       path: "{{Admin_Root}}/zabbix-env/Zabbix_DB_Core_HA"
+       state: directory
+##
+# Copying the folder and files from localhost /usr/share/mtaas/Zabbix_DB_Core_HA
+# to /usr/share/mtaas/zabbix-env/Zabbix_DB_Core_HA
+##
+   - name: Copy the Zabbix Pre-Check scripts
+     copy:
+       src: "{{Admin_Root}}/Zabbix_DB_Core_HA/"
+       dest: "{{Admin_Root}}/zabbix-env/Zabbix_DB_Core_HA"
+
+# Executing secondryhascript.py for Zabbix DB install
+   - command: python mysql_db_ha_config_secondary.py "{{primary_db_host}}"
+     args:
+       chdir: "{{Admin_Root}}/zabbix-env/Zabbix_DB_Core_HA/Bin"

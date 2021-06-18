@@ -1,0 +1,17 @@
+###
+#
+# This Playbook is including the zabbix_db_pre_secondary.yml playbook
+# @host: Secondary_DB_Zabbix
+#
+# @author: Monika Nagpal
+# @date:
+# @version:
+#
+###
+   # - setup: 
+   # - include_tasks: cleanup.yml
+   # - include_tasks: api.yml
+
+#including tasks zabbix_db_pre_secondary.yml
+   - include_tasks: zabbix_db_pre_secondary.yml
+   

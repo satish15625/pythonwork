@@ -1,0 +1,94 @@
+   - setup:
+   - debug:
+       msg: Installing Zabbix Agent "{{ ansible_hostname }}"
+   - set_fact:
+       Zabbix_Server: "{{item}}"
+     with_items:
+       - "{{groups['Primary_Core_Zabbix']}}"
+   - set_fact:
+       Zabbix_VIP: "{{item}}"
+     with_items:
+       - "{{groups['Primary_VIP_Zabbix']}}"
+   - set_fact:
+       Zabbix_Proxy_Server: "{{item}}"
+     with_items:
+       - "{{groups['Primary_Proxy_Zabbix']}}"
+     when: "'Primary_Proxy_Zabbix' in groups"
+   - set_fact:
+       Zabbix_Proxy_Server2: "{{item}}"
+     with_items:
+       - "{{groups['Secondary_Proxy_Zabbix']}}"
+     when: "'Secondary_Proxy_Zabbix' in groups"
+   - set_fact:
+       Zabbix_Proxy_Server: None
+     when: "'Primary_Proxy_Zabbix' not in groups"
+   - set_fact:
+       Zabbix_Proxy_Server2: None
+     when: "'Secondary_Proxy_Zabbix' not in groups"
+   - name: Get Environment variable Admin_Root
+     set_fact:
+       Admin_Root: "{{lookup('env','Admin_Root') }}"
+   - debug:
+      msg: "{{Admin_Root}}"
+   - debug:
+      msg: "{{Zabbix_Proxy_Server}}"   
+   - debug:
+      msg: "{{Zabbix_Proxy_Server2}}"   
+   - name: Create folder structure for Zabbix Agent install
+     file:
+       path: "{{Admin_Root}}/zabbix-env/Zabbix_Agent/"
+       state: directory
+
+   - name: Copy the Zabbix  Agent Install Scripts
+     copy:
+       src: "{{Admin_Root}}/Zabbix_Agent/"
+       dest: "{{Admin_Root}}/zabbix-env/Zabbix_Agent"
+
+   - name: Zabbix Agent install
+     command: python agentinstall_linux_noconf.py "{{Zabbix_VIP}}" "{{Zabbix_Server}}" "{{Zabbix_Proxy_Server}}" "{{Zabbix_Proxy_Server2}}" "Admin" "zabbix" "Template OS Linux by Zabbix agent" "Linux servers"
+     args:
+       chdir: "{{Admin_Root}}/zabbix-env/Zabbix_Agent/Bin"
+   - name: Get files in a folder
+     find:
+       paths: "{{Admin_Root}}/zabbix-env/Zabbix_Agent/Output"
+     register: found_files
+
+   - name: Get latest log file - AgentInstall
+     set_fact:
+       latest_file: "{{ found_files.files | sort(attribute='mtime',reverse=true) | first }}" 
+   - name: Print Lastest file name
+     debug:
+       var: latest_file.path
+
+   - name: Read the latest log file - App
+     shell: cat {{ latest_file.path }} | awk 'BEGIN {FS = ","} ; {print $1}'
+     register: zabbiz_log
+
+   - name: Displaying the status of Zabbix pre-requisites - App
+     debug:
+       var:   zabbiz_log.stdout_lines
+   - name: Saving the Zabbix Agent Install results
+     copy:
+       content: "{{ zabbiz_log.stdout_lines }}"
+       dest: "{{Admin_Root}}/zabbix-env/Zabbix_Agent/zabbix_pre.result"
+       force: yes
+
+   - name: Create a json string for status - Agent
+     shell: cat "{{Admin_Root}}/zabbix-env/Zabbix_Agent/zabbix_pre.result" | tr -d '"' | tr -d '[' |tr -d ']'
+     register: zabbix_pre_post  
+
+   - name: Validate the Zabbix Agent Install results
+     shell: cat "{{Admin_Root}}/zabbix-env/Zabbix_Agent/zabbix_pre.result" | grep -i fail
+     register: zabbix_agent_pf
+
+   - name: Create a Marker in case of Agent Install failures
+     file:
+       path: /tmp/cleanup/zabbix_agent_p1
+       state: touch
+     delegate_to: localhost
+     when: zabbix_agent_pf.rc = 0
+
+   - meta: end_play
+     when: zabbix_agent_pf.rc = 0 
+
+ 

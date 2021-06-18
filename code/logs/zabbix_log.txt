@@ -1,0 +1,855 @@
+12/18/2020 11:57:48 AM deployement Started on 2020:12:18-11:57:48
+12/18/2020 11:57:48 AM Load inventory in JSON format 2020:12:18-11:57:48
+12/18/2020 11:57:48 AM Successfully Loaded inventory in JSON format 2020:12:18-11:57:48
+12/18/2020 11:59:46 AM deployement Started on 2020:12:18-11:59:46
+12/18/2020 11:59:46 AM Load inventory in JSON format 2020:12:18-11:59:46
+12/18/2020 11:59:46 AM Successfully Loaded inventory in JSON format 2020:12:18-11:59:46
+12/18/2020 12:00:23 PM deployement Started on 2020:12:18-12:00:23
+12/18/2020 12:00:23 PM Load inventory in JSON format 2020:12:18-12:00:23
+12/18/2020 12:00:23 PM Successfully Loaded inventory in JSON format 2020:12:18-12:00:23
+12/18/2020 12:00:23 PM Ansible writer started
+12/18/2020 12:00:44 PM deployement Started on 2020:12:18-12:00:44
+12/18/2020 12:00:44 PM Load inventory in JSON format 2020:12:18-12:00:44
+12/18/2020 12:00:44 PM Successfully Loaded inventory in JSON format 2020:12:18-12:00:44
+12/18/2020 12:00:44 PM Ansible writer started
+12/18/2020 12:00:44 PM Load Credentials as extra vars 2020:12:18-12:00:44
+12/18/2020 12:01:16 PM deployement Started on 2020:12:18-12:01:16
+12/18/2020 12:01:16 PM Load inventory in JSON format 2020:12:18-12:01:16
+12/18/2020 12:01:16 PM Successfully Loaded inventory in JSON format 2020:12:18-12:01:16
+12/18/2020 12:01:16 PM Ansible writer started
+12/18/2020 12:01:16 PM Load Credentials as extra vars 2020:12:18-12:01:16
+12/18/2020 12:01:16 PM Loaded Credentials as extra vars 2020:12:18-12:01:16
+12/18/2020 12:01:16 PM Rollback Initiated
+12/18/2020 12:01:16 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/18/2020 12:02:56 PM Finding code in output started
+12/18/2020 12:02:56 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/18/2020 12:02:57 PM Finding code in output started
+12/18/2020 12:02:57 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/18/2020 12:06:01 PM Finding code in output started
+12/18/2020 12:06:01 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/18/2020 12:06:02 PM Finding code in output started
+12/18/2020 12:06:02 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 02:31:14 PM deployement Started on 2020:12:21-14:31:14
+12/21/2020 02:31:14 PM Load inventory in JSON format 2020:12:21-14:31:14
+12/21/2020 02:31:14 PM Successfully Loaded inventory in JSON format 2020:12:21-14:31:14
+12/21/2020 02:31:14 PM Ansible writer started
+12/21/2020 02:31:14 PM Load Credentials as extra vars 2020:12:21-14:31:14
+12/21/2020 02:31:14 PM Loaded Credentials as extra vars 2020:12:21-14:31:14
+12/21/2020 02:31:14 PM Rollback Initiated
+12/21/2020 02:31:14 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 02:31:25 PM Finding code in output started
+12/21/2020 02:31:25 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 02:31:26 PM Finding code in output started
+12/21/2020 02:31:26 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 02:33:44 PM Finding code in output started
+12/21/2020 02:33:44 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 02:33:45 PM Finding code in output started
+12/21/2020 02:33:45 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:17:10 PM deployement Started on 2020:12:21-15:17:10
+12/21/2020 03:17:10 PM Load inventory in JSON format 2020:12:21-15:17:10
+12/21/2020 03:17:10 PM Successfully Loaded inventory in JSON format 2020:12:21-15:17:10
+12/21/2020 03:17:10 PM Ansible writer started
+12/21/2020 03:17:10 PM Load Credentials as extra vars 2020:12:21-15:17:10
+12/21/2020 03:17:10 PM Loaded Credentials as extra vars 2020:12:21-15:17:10
+12/21/2020 03:17:10 PM Rollback Initiated
+12/21/2020 03:17:10 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:17:20 PM Finding code in output started
+12/21/2020 03:17:20 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:17:21 PM Finding code in output started
+12/21/2020 03:17:21 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:17:33 PM deployement Started on 2020:12:21-15:17:33
+12/21/2020 03:17:33 PM Load inventory in JSON format 2020:12:21-15:17:33
+12/21/2020 03:17:33 PM Successfully Loaded inventory in JSON format 2020:12:21-15:17:33
+12/21/2020 03:17:33 PM Ansible writer started
+12/21/2020 03:17:33 PM Load Credentials as extra vars 2020:12:21-15:17:33
+12/21/2020 03:17:33 PM Loaded Credentials as extra vars 2020:12:21-15:17:33
+12/21/2020 03:17:33 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:17:37 PM Finding code in output started
+12/21/2020 03:17:37 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:17:39 PM Finding code in output started
+12/21/2020 03:32:00 PM ansible-playbook -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini --e interaction_id=78uj /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/zabbix_script_copy.yml  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:32:00 PM Test zabbix sa Preecheck function called
+12/21/2020 03:32:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:32:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:32:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:32:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:32:03 PM Finding code in output started
+12/21/2020 03:32:03 PM Finding code in output started
+12/21/2020 03:32:04 PM Finding code in output started
+12/21/2020 03:32:29 PM Finding code in output started
+12/21/2020 03:32:29 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:32:29 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_install_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:32:29 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_install_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:32:29 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_install_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 03:33:04 PM Finding code in output started
+12/21/2020 03:35:11 PM Finding code in output started
+12/21/2020 03:36:20 PM Finding code in output started
+12/21/2020 05:28:22 PM Finding code in output started
+12/21/2020 05:28:43 PM deployement Started on 2020:12:21-17:28:43
+12/21/2020 05:28:43 PM Load inventory in JSON format 2020:12:21-17:28:43
+12/21/2020 05:28:43 PM Successfully Loaded inventory in JSON format 2020:12:21-17:28:43
+12/21/2020 05:28:43 PM Ansible writer started
+12/21/2020 05:28:43 PM Load Credentials as extra vars 2020:12:21-17:28:43
+12/21/2020 05:28:43 PM Loaded Credentials as extra vars 2020:12:21-17:28:43
+12/21/2020 05:28:43 PM Rollback Initiated
+12/21/2020 05:28:43 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 05:28:52 PM Finding code in output started
+12/21/2020 05:28:52 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 05:28:53 PM Finding code in output started
+12/21/2020 05:28:53 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 05:31:11 PM Finding code in output started
+12/21/2020 05:31:11 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 05:31:12 PM Finding code in output started
+12/21/2020 05:31:12 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 05:46:59 PM deployement Started on 2020:12:21-17:46:59
+12/21/2020 05:46:59 PM Load inventory in JSON format 2020:12:21-17:46:59
+12/21/2020 05:46:59 PM Successfully Loaded inventory in JSON format 2020:12:21-17:46:59
+12/21/2020 05:46:59 PM Ansible writer started
+12/21/2020 05:46:59 PM Rollback Initiated
+12/21/2020 05:46:59 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "/home/satish/gitSrc/ideploy_mtaas/iDeploy/working/zabbix/zabbix_extra_vars.yml"
+12/21/2020 05:47:00 PM Finding code in output started
+12/21/2020 05:47:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "/home/satish/gitSrc/ideploy_mtaas/iDeploy/working/zabbix/zabbix_extra_vars.yml"
+12/21/2020 05:47:02 PM Finding code in output started
+12/21/2020 05:47:02 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_rollback  --extra-vars "/home/satish/gitSrc/ideploy_mtaas/iDeploy/working/zabbix/zabbix_extra_vars.yml"
+12/21/2020 05:47:03 PM Finding code in output started
+12/21/2020 05:47:03 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "/home/satish/gitSrc/ideploy_mtaas/iDeploy/working/zabbix/zabbix_extra_vars.yml"
+12/21/2020 05:47:05 PM Finding code in output started
+12/21/2020 05:50:02 PM deployement Started on 2020:12:21-17:50:02
+12/21/2020 05:50:02 PM Load inventory in JSON format 2020:12:21-17:50:02
+12/21/2020 05:50:02 PM Successfully Loaded inventory in JSON format 2020:12:21-17:50:02
+12/21/2020 05:50:02 PM Ansible writer started
+12/21/2020 05:50:02 PM Load Credentials as extra vars 2020:12:21-17:50:02
+12/21/2020 05:50:02 PM Loaded Credentials as extra vars 2020:12:21-17:50:02
+12/21/2020 05:50:02 PM Rollback Initiated
+12/21/2020 05:50:02 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 05:50:11 PM Finding code in output started
+12/21/2020 05:50:11 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 05:52:29 PM Finding code in output started
+12/21/2020 05:52:29 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 06:52:44 PM deployement Started on 2020:12:21-18:52:44
+12/21/2020 06:52:44 PM Load inventory in JSON format 2020:12:21-18:52:44
+12/21/2020 06:52:44 PM Successfully Loaded inventory in JSON format 2020:12:21-18:52:44
+12/21/2020 06:52:44 PM Ansible writer started
+12/21/2020 06:52:44 PM Load Credentials as extra vars 2020:12:21-18:52:44
+12/21/2020 06:52:44 PM Loaded Credentials as extra vars 2020:12:21-18:52:44
+12/21/2020 06:52:44 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 06:52:48 PM Finding code in output started
+12/21/2020 06:52:48 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 06:52:51 PM Finding code in output started
+12/21/2020 07:07:14 PM ansible-playbook -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini --e interaction_id=78uj /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/zabbix_script_copy_ha.yml  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:14 PM Test zabbix ha Preecheck function called
+12/21/2020 07:07:14 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:14 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:14 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:14 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:14 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:14 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:14 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:14 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:18 PM Finding code in output started
+12/21/2020 07:07:18 PM Finding code in output started
+12/21/2020 07:07:18 PM Finding code in output started
+12/21/2020 07:07:18 PM Finding code in output started
+12/21/2020 07:07:18 PM Finding code in output started
+12/21/2020 07:07:18 PM Finding code in output started
+12/21/2020 07:07:18 PM Finding code in output started
+12/21/2020 07:07:43 PM Finding code in output started
+12/21/2020 07:07:43 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_install_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:43 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_install_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:43 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:43 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_install_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:43 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_install_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:43 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:07:45 PM Finding code in output started
+12/21/2020 07:07:46 PM Finding code in output started
+12/21/2020 07:08:14 PM Finding code in output started
+12/21/2020 07:08:36 PM Finding code in output started
+12/21/2020 07:09:10 PM Finding code in output started
+12/21/2020 07:10:06 PM Finding code in output started
+12/21/2020 07:10:06 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_install_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:10:34 PM Finding code in output started
+12/21/2020 07:10:34 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_install_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:13:22 PM Finding code in output started
+12/21/2020 07:13:22 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_config_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:13:26 PM Finding code in output started
+12/21/2020 07:13:26 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:13:29 PM Finding code in output started
+12/21/2020 07:13:29 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_mysql_DB_Master_Config  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:13:33 PM Finding code in output started
+12/21/2020 07:13:33 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_mysql_DB_Slave_Config  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:13:34 PM Finding code in output started
+12/21/2020 07:13:34 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_config_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:13:40 PM Finding code in output started
+12/21/2020 07:13:40 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:14:08 PM Finding code in output started
+12/21/2020 07:14:08 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:14:15 PM Finding code in output started
+12/21/2020 07:14:15 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:14:22 PM Finding code in output started
+12/21/2020 07:14:22 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:14:28 PM Finding code in output started
+12/21/2020 07:14:28 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:14:35 PM Finding code in output started
+12/21/2020 07:14:35 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_config_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:14:39 PM Finding code in output started
+12/21/2020 07:14:39 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:14:44 PM Finding code in output started
+12/21/2020 07:14:44 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_ssl_configuration  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:15:03 PM Finding code in output started
+12/21/2020 07:15:03 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_ssl_configuration_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:15:24 PM Finding code in output started
+12/21/2020 07:20:26 PM deployement Started on 2020:12:21-19:20:26
+12/21/2020 07:20:26 PM Load inventory in JSON format 2020:12:21-19:20:26
+12/21/2020 07:20:26 PM Successfully Loaded inventory in JSON format 2020:12:21-19:20:26
+12/21/2020 07:20:26 PM Ansible writer started
+12/21/2020 07:20:26 PM Load Credentials as extra vars 2020:12:21-19:20:26
+12/21/2020 07:20:26 PM Loaded Credentials as extra vars 2020:12:21-19:20:26
+12/21/2020 07:20:26 PM Rollback Initiated
+12/21/2020 07:20:26 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:20:36 PM Finding code in output started
+12/21/2020 07:20:36 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:22:13 PM Finding code in output started
+12/21/2020 07:22:13 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:24:31 PM Finding code in output started
+12/21/2020 07:24:31 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:24:34 PM Finding code in output started
+12/21/2020 07:24:34 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:25:54 PM Finding code in output started
+12/21/2020 07:25:54 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:26:34 PM Finding code in output started
+12/21/2020 07:26:34 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:26:49 PM Finding code in output started
+12/21/2020 07:26:49 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:26:50 PM Finding code in output started
+12/21/2020 07:42:00 PM deployement Started on 2020:12:21-19:42:00
+12/21/2020 07:42:00 PM Load inventory in JSON format 2020:12:21-19:42:00
+12/21/2020 07:42:00 PM Successfully Loaded inventory in JSON format 2020:12:21-19:42:00
+12/21/2020 07:42:00 PM Ansible writer started
+12/21/2020 07:42:00 PM Load Credentials as extra vars 2020:12:21-19:42:00
+12/21/2020 07:42:00 PM Loaded Credentials as extra vars 2020:12:21-19:42:00
+12/21/2020 07:42:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:42:07 PM Finding code in output started
+12/21/2020 07:42:07 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:42:10 PM Finding code in output started
+12/21/2020 07:57:22 PM ansible-playbook -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini --e interaction_id=78uj /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/zabbix_script_copy_ha.yml  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:57:22 PM Test zabbix ha Preecheck function called
+12/21/2020 07:57:22 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:57:22 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:57:22 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:57:22 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:57:22 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:57:22 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:57:22 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:57:22 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 07:57:26 PM Finding code in output started
+12/21/2020 07:57:26 PM Finding code in output started
+12/21/2020 07:57:27 PM Finding code in output started
+12/21/2020 07:57:27 PM Finding code in output started
+12/21/2020 07:57:27 PM Finding code in output started
+12/21/2020 07:57:27 PM Finding code in output started
+12/21/2020 07:57:28 PM Finding code in output started
+12/21/2020 07:57:28 PM Finding code in output started
+12/21/2020 07:57:28 PM Exiting due to failed precheck
+12/21/2020 08:27:58 PM deployement Started on 2020:12:21-20:27:58
+12/21/2020 08:27:58 PM Load inventory in JSON format 2020:12:21-20:27:58
+12/21/2020 08:27:58 PM Successfully Loaded inventory in JSON format 2020:12:21-20:27:58
+12/21/2020 08:27:58 PM Ansible writer started
+12/21/2020 08:27:58 PM Load Credentials as extra vars 2020:12:21-20:27:58
+12/21/2020 08:27:58 PM Loaded Credentials as extra vars 2020:12:21-20:27:58
+12/21/2020 08:27:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_install_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:27:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_install_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:27:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:27:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_install_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:27:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_install_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:27:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:28:02 PM Finding code in output started
+12/21/2020 08:28:33 PM Finding code in output started
+12/21/2020 08:28:59 PM Finding code in output started
+12/21/2020 08:29:25 PM Finding code in output started
+12/21/2020 08:29:53 PM Finding code in output started
+12/21/2020 08:34:16 PM Finding code in output started
+12/21/2020 08:34:16 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_install_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:37:09 PM Finding code in output started
+12/21/2020 08:37:09 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_install_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:40:09 PM Finding code in output started
+12/21/2020 08:51:06 PM deployement Started on 2020:12:21-20:51:06
+12/21/2020 08:51:06 PM Load inventory in JSON format 2020:12:21-20:51:06
+12/21/2020 08:51:06 PM Successfully Loaded inventory in JSON format 2020:12:21-20:51:06
+12/21/2020 08:51:06 PM Ansible writer started
+12/21/2020 08:51:06 PM Load Credentials as extra vars 2020:12:21-20:51:06
+12/21/2020 08:51:06 PM Loaded Credentials as extra vars 2020:12:21-20:51:06
+12/21/2020 08:51:06 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_config_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:51:10 PM Finding code in output started
+12/21/2020 08:51:10 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:51:44 PM Finding code in output started
+12/21/2020 08:51:44 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_mysql_DB_Master_Config  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:51:47 PM Finding code in output started
+12/21/2020 08:51:47 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_mysql_DB_Slave_Config  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:52:10 PM Finding code in output started
+12/21/2020 08:52:10 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_config_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:52:45 PM Finding code in output started
+12/21/2020 08:52:45 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:53:36 PM Finding code in output started
+12/21/2020 08:53:36 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:53:43 PM Finding code in output started
+12/21/2020 08:53:43 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:53:51 PM Finding code in output started
+12/21/2020 08:53:51 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:53:57 PM Finding code in output started
+12/21/2020 08:53:57 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:54:04 PM Finding code in output started
+12/21/2020 08:54:04 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_config_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:54:09 PM Finding code in output started
+12/21/2020 08:54:09 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:54:14 PM Finding code in output started
+12/21/2020 08:54:14 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_ssl_configuration  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:54:24 PM Finding code in output started
+12/21/2020 08:54:24 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_ssl_configuration_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/21/2020 08:54:42 PM Finding code in output started
+12/22/2020 10:04:00 AM deployement Started on 2020:12:22-10:04:00
+12/22/2020 10:04:00 AM Load inventory in JSON format 2020:12:22-10:04:00
+12/22/2020 10:04:00 AM Successfully Loaded inventory in JSON format 2020:12:22-10:04:00
+12/22/2020 10:04:00 AM Ansible writer started
+12/22/2020 10:04:00 AM Load Credentials as extra vars 2020:12:22-10:04:00
+12/22/2020 10:04:00 AM Loaded Credentials as extra vars 2020:12:22-10:04:00
+12/22/2020 10:04:00 AM Rollback Initiated
+12/22/2020 10:04:00 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:05:23 AM Finding code in output started
+12/22/2020 10:05:23 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:07:02 AM Finding code in output started
+12/22/2020 10:07:02 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:09:19 AM Finding code in output started
+12/22/2020 10:09:19 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:10:03 AM Finding code in output started
+12/22/2020 10:10:03 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:11:22 AM Finding code in output started
+12/22/2020 10:11:22 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:12:42 AM Finding code in output started
+12/22/2020 10:12:42 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:12:58 AM Finding code in output started
+12/22/2020 10:12:58 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:12:59 AM Finding code in output started
+12/22/2020 10:18:02 AM deployement Started on 2020:12:22-10:18:02
+12/22/2020 10:18:02 AM Load inventory in JSON format 2020:12:22-10:18:02
+12/22/2020 10:18:02 AM Successfully Loaded inventory in JSON format 2020:12:22-10:18:02
+12/22/2020 10:18:02 AM Ansible writer started
+12/22/2020 10:18:02 AM Load Credentials as extra vars 2020:12:22-10:18:02
+12/22/2020 10:18:02 AM Loaded Credentials as extra vars 2020:12:22-10:18:02
+12/22/2020 10:18:02 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:18:06 AM Finding code in output started
+12/22/2020 10:18:06 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:18:09 AM Finding code in output started
+12/22/2020 10:33:18 AM ansible-playbook -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini --e interaction_id=78uj /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/zabbix_script_copy_ha.yml  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:33:18 AM Test zabbix ha Preecheck function called
+12/22/2020 10:33:18 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:33:18 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:33:19 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:33:19 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:33:19 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:33:19 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:33:19 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:33:19 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:33:22 AM Finding code in output started
+12/22/2020 10:33:23 AM Finding code in output started
+12/22/2020 10:33:23 AM Finding code in output started
+12/22/2020 10:33:24 AM Finding code in output started
+12/22/2020 10:33:24 AM Finding code in output started
+12/22/2020 10:33:25 AM Finding code in output started
+12/22/2020 10:33:25 AM Finding code in output started
+12/22/2020 10:33:25 AM Finding code in output started
+12/22/2020 10:33:25 AM Exiting due to failed precheck
+12/22/2020 10:45:48 AM deployement Started on 2020:12:22-10:45:48
+12/22/2020 10:45:48 AM Load inventory in JSON format 2020:12:22-10:45:48
+12/22/2020 10:45:48 AM Successfully Loaded inventory in JSON format 2020:12:22-10:45:48
+12/22/2020 10:45:48 AM Ansible writer started
+12/22/2020 10:45:48 AM Load Credentials as extra vars 2020:12:22-10:45:48
+12/22/2020 10:45:48 AM Loaded Credentials as extra vars 2020:12:22-10:45:48
+12/22/2020 10:45:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_install_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:45:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_install_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:45:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:45:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:45:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_install_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:45:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_install_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:46:23 AM Finding code in output started
+12/22/2020 10:46:50 AM Finding code in output started
+12/22/2020 10:48:17 AM Finding code in output started
+12/22/2020 10:48:27 AM Finding code in output started
+12/22/2020 10:49:35 AM Finding code in output started
+12/22/2020 10:51:02 AM Finding code in output started
+12/22/2020 10:51:02 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_install_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:54:30 AM Finding code in output started
+12/22/2020 10:54:30 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_install_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:57:20 AM Finding code in output started
+12/22/2020 10:58:43 AM deployement Started on 2020:12:22-10:58:43
+12/22/2020 10:58:43 AM Load inventory in JSON format 2020:12:22-10:58:43
+12/22/2020 10:58:43 AM Successfully Loaded inventory in JSON format 2020:12:22-10:58:43
+12/22/2020 10:58:43 AM Ansible writer started
+12/22/2020 10:58:43 AM Load Credentials as extra vars 2020:12:22-10:58:43
+12/22/2020 10:58:43 AM Loaded Credentials as extra vars 2020:12:22-10:58:43
+12/22/2020 10:58:43 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_config_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:59:14 AM Finding code in output started
+12/22/2020 10:59:14 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:00:07 AM Finding code in output started
+12/22/2020 11:00:07 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_mysql_DB_Master_Config  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:00:18 AM Finding code in output started
+12/22/2020 11:00:18 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_mysql_DB_Slave_Config  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:00:37 AM Finding code in output started
+12/22/2020 11:00:37 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_config_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:01:27 AM Finding code in output started
+12/22/2020 11:01:27 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:02:01 AM Finding code in output started
+12/22/2020 11:02:01 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:02:09 AM Finding code in output started
+12/22/2020 11:02:09 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:02:16 AM Finding code in output started
+12/22/2020 11:02:16 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:02:22 AM Finding code in output started
+12/22/2020 11:02:22 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:02:29 AM Finding code in output started
+12/22/2020 11:02:29 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_config_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:02:35 AM Finding code in output started
+12/22/2020 11:02:35 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:02:39 AM Finding code in output started
+12/22/2020 11:02:39 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_ssl_configuration  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:02:59 AM Finding code in output started
+12/22/2020 11:02:59 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_ssl_configuration_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:03:17 AM Finding code in output started
+12/22/2020 11:06:20 AM deployement Started on 2020:12:22-11:06:20
+12/22/2020 11:06:20 AM Load inventory in JSON format 2020:12:22-11:06:20
+12/22/2020 11:06:20 AM Successfully Loaded inventory in JSON format 2020:12:22-11:06:20
+12/22/2020 11:06:20 AM Ansible writer started
+12/22/2020 11:06:20 AM Load Credentials as extra vars 2020:12:22-11:06:20
+12/22/2020 11:06:20 AM Loaded Credentials as extra vars 2020:12:22-11:06:20
+12/22/2020 11:06:20 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_copyone  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:06:26 AM Finding code in output started
+12/22/2020 11:06:26 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_copysecond  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:06:32 AM Finding code in output started
+12/22/2020 11:06:32 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_cluster  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:08:31 AM Finding code in output started
+12/22/2020 11:08:31 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_cluster  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:12:57 AM Finding code in output started
+12/22/2020 11:12:57 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_first  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:13:04 AM Finding code in output started
+12/22/2020 11:13:04 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_onboarding  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:13:09 AM Finding code in output started
+12/22/2020 11:13:09 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_create_group_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:13:13 AM Finding code in output started
+12/22/2020 11:13:13 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_create_group_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:13:17 AM Finding code in output started
+12/22/2020 11:13:17 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_create_user_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:13:20 AM Finding code in output started
+12/22/2020 11:13:20 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_create_user_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:13:23 AM Finding code in output started
+12/22/2020 11:13:23 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_smtp_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:13:27 AM Finding code in output started
+12/22/2020 11:13:27 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_smtp_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:13:30 AM Finding code in output started
+12/22/2020 11:13:30 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_change_admin  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:13:35 AM Finding code in output started
+12/22/2020 11:13:35 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_change_admin_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:13:40 AM Finding code in output started
+12/22/2020 11:13:40 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_heartbeat  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:13:45 AM Finding code in output started
+12/22/2020 11:13:45 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_heartbeat_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:13:49 AM Finding code in output started
+12/22/2020 11:13:49 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_ha_proxy_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:14:47 AM Finding code in output started
+12/22/2020 11:14:47 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_trigger_action,  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:14:48 AM Finding code in output started
+12/22/2020 11:14:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_ha_proxy_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:15:48 AM Finding code in output started
+12/22/2020 11:15:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_agent  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:15:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_agent  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:15:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_agent  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:15:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_agent_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:15:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_agent_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:15:48 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_agent_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:15:50 AM Finding code in output started
+12/22/2020 11:15:50 AM Finding code in output started
+12/22/2020 11:15:50 AM Finding code in output started
+12/22/2020 11:16:02 AM Finding code in output started
+12/22/2020 11:16:04 AM Finding code in output started
+12/22/2020 11:16:20 AM Finding code in output started
+12/22/2020 11:16:20 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_postcheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:16:20 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_postcheck  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:16:20 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_postcheck  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:16:20 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_postcheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:16:20 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_postcheck  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:16:20 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_postcheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:16:24 AM Finding code in output started
+12/22/2020 11:16:24 AM Finding code in output started
+12/22/2020 11:16:24 AM Finding code in output started
+12/22/2020 11:16:25 AM Finding code in output started
+12/22/2020 11:16:25 AM Finding code in output started
+12/22/2020 11:16:26 AM Finding code in output started
+12/22/2020 11:16:26 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_postcheck  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:16:45 AM Finding code in output started
+12/22/2020 11:16:45 AM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_postcheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 11:17:00 AM Finding code in output started
+12/22/2020 03:47:02 PM deployement Started on 2020:12:22-15:47:02
+12/22/2020 03:47:02 PM Load inventory in JSON format 2020:12:22-15:47:02
+12/22/2020 03:47:03 PM Successfully Loaded inventory in JSON format 2020:12:22-15:47:02
+12/22/2020 03:47:03 PM Ansible writer started
+12/22/2020 03:47:03 PM Load Credentials as extra vars 2020:12:22-15:47:02
+12/22/2020 03:47:03 PM Loaded Credentials as extra vars 2020:12:22-15:47:02
+12/22/2020 03:47:12 PM deployement Started on 2020:12:22-15:47:12
+12/22/2020 03:47:12 PM Load inventory in JSON format 2020:12:22-15:47:12
+12/22/2020 03:47:12 PM Successfully Loaded inventory in JSON format 2020:12:22-15:47:12
+12/22/2020 03:47:12 PM Ansible writer started
+12/22/2020 03:47:12 PM Load Credentials as extra vars 2020:12:22-15:47:12
+12/22/2020 03:47:12 PM Loaded Credentials as extra vars 2020:12:22-15:47:12
+12/22/2020 03:47:48 PM deployement Started on 2020:12:22-15:47:48
+12/22/2020 03:47:48 PM Load inventory in JSON format 2020:12:22-15:47:48
+12/22/2020 03:47:48 PM Successfully Loaded inventory in JSON format 2020:12:22-15:47:48
+12/22/2020 03:47:48 PM Ansible writer started
+12/22/2020 03:47:48 PM Load Credentials as extra vars 2020:12:22-15:47:48
+12/22/2020 03:47:48 PM Loaded Credentials as extra vars 2020:12:22-15:47:48
+12/22/2020 03:47:48 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 03:47:53 PM Finding code in output started
+12/22/2020 03:47:53 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 03:49:37 PM deployement Started on 2020:12:22-15:49:37
+12/22/2020 03:49:37 PM Load inventory in JSON format 2020:12:22-15:49:37
+12/22/2020 03:49:37 PM Successfully Loaded inventory in JSON format 2020:12:22-15:49:37
+12/22/2020 03:49:37 PM Ansible writer started
+12/22/2020 03:49:37 PM Load Credentials as extra vars 2020:12:22-15:49:37
+12/22/2020 03:49:37 PM Loaded Credentials as extra vars 2020:12:22-15:49:37
+12/22/2020 03:49:37 PM Rollback Initiated
+12/22/2020 03:49:37 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 03:51:25 PM Finding code in output started
+12/22/2020 03:51:25 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 03:52:37 PM Finding code in output started
+12/22/2020 03:52:37 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 03:55:53 PM Finding code in output started
+12/22/2020 03:55:53 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 03:56:36 PM Finding code in output started
+12/22/2020 03:56:36 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:12:08 PM deployement Started on 2020:12:22-16:12:08
+12/22/2020 04:12:08 PM Load inventory in JSON format 2020:12:22-16:12:08
+12/22/2020 04:12:08 PM Successfully Loaded inventory in JSON format 2020:12:22-16:12:08
+12/22/2020 04:12:08 PM Ansible writer started
+12/22/2020 04:12:08 PM Load Credentials as extra vars 2020:12:22-16:12:08
+12/22/2020 04:12:08 PM Loaded Credentials as extra vars 2020:12:22-16:12:08
+12/22/2020 04:12:08 PM Rollback Initiated
+12/22/2020 04:12:08 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:12:19 PM Finding code in output started
+12/22/2020 04:12:19 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:12:33 PM Finding code in output started
+12/22/2020 04:12:33 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:14:52 PM Finding code in output started
+12/22/2020 04:14:52 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:15:06 PM Finding code in output started
+12/22/2020 04:15:06 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:40:24 PM deployement Started on 2020:12:22-16:40:24
+12/22/2020 04:40:24 PM Load inventory in JSON format 2020:12:22-16:40:24
+12/22/2020 04:40:24 PM Successfully Loaded inventory in JSON format 2020:12:22-16:40:24
+12/22/2020 04:40:24 PM Ansible writer started
+12/22/2020 04:40:24 PM Load Credentials as extra vars 2020:12:22-16:40:24
+12/22/2020 04:40:24 PM Loaded Credentials as extra vars 2020:12:22-16:40:24
+12/22/2020 04:40:24 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:40:27 PM Finding code in output started
+12/22/2020 04:40:27 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:40:30 PM Finding code in output started
+12/22/2020 04:55:42 PM ansible-playbook -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini --e interaction_id=78uj /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/zabbix_script_copy_ha.yml  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:55:42 PM Test zabbix ha Preecheck function called
+12/22/2020 04:55:42 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:55:42 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:55:42 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:55:42 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:55:42 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:55:42 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:55:42 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:55:42 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 04:55:44 PM Finding code in output started
+12/22/2020 04:55:44 PM Finding code in output started
+12/22/2020 04:55:47 PM Finding code in output started
+12/22/2020 04:55:47 PM Finding code in output started
+12/22/2020 04:55:47 PM Finding code in output started
+12/22/2020 04:55:47 PM Finding code in output started
+12/22/2020 04:55:47 PM Finding code in output started
+12/22/2020 04:55:47 PM Finding code in output started
+12/22/2020 04:55:47 PM Exiting due to failed precheck
+12/22/2020 06:14:21 PM deployement Started on 2020:12:22-18:14:21
+12/22/2020 06:14:21 PM Load inventory in JSON format 2020:12:22-18:14:21
+12/22/2020 06:14:21 PM Successfully Loaded inventory in JSON format 2020:12:22-18:14:21
+12/22/2020 06:14:21 PM Ansible writer started
+12/22/2020 06:14:21 PM Load Credentials as extra vars 2020:12:22-18:14:21
+12/22/2020 06:14:21 PM Loaded Credentials as extra vars 2020:12:22-18:14:21
+12/22/2020 06:14:21 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:14:24 PM Finding code in output started
+12/22/2020 06:14:24 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:14:27 PM Finding code in output started
+12/22/2020 06:29:38 PM ansible-playbook -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini --e interaction_id=78uj /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/zabbix_script_copy_ha.yml  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:29:38 PM Test zabbix ha Preecheck function called
+12/22/2020 06:29:38 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:29:38 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:29:38 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:29:38 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:29:38 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:29:38 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:29:38 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:29:38 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:29:42 PM Finding code in output started
+12/22/2020 06:29:42 PM Finding code in output started
+12/22/2020 06:29:42 PM Finding code in output started
+12/22/2020 06:29:42 PM Finding code in output started
+12/22/2020 06:29:42 PM Finding code in output started
+12/22/2020 06:29:42 PM Finding code in output started
+12/22/2020 06:29:43 PM Finding code in output started
+12/22/2020 06:29:43 PM Finding code in output started
+12/22/2020 06:29:43 PM Exiting due to failed precheck
+12/22/2020 06:40:41 PM deployement Started on 2020:12:22-18:40:41
+12/22/2020 06:40:41 PM Load inventory in JSON format 2020:12:22-18:40:41
+12/22/2020 06:40:41 PM Successfully Loaded inventory in JSON format 2020:12:22-18:40:41
+12/22/2020 06:40:41 PM Ansible writer started
+12/22/2020 06:40:41 PM Load Credentials as extra vars 2020:12:22-18:40:41
+12/22/2020 06:40:41 PM Loaded Credentials as extra vars 2020:12:22-18:40:41
+12/22/2020 06:40:41 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:40:44 PM Finding code in output started
+12/22/2020 06:40:44 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:40:47 PM Finding code in output started
+12/22/2020 06:55:58 PM ansible-playbook -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini --e interaction_id=78uj /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/zabbix_script_copy_ha.yml  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:55:58 PM Test zabbix ha Preecheck function called
+12/22/2020 06:55:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:55:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:55:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:55:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:55:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:55:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:55:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:55:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:56:02 PM Finding code in output started
+12/22/2020 06:56:02 PM Finding code in output started
+12/22/2020 06:56:02 PM Finding code in output started
+12/22/2020 06:56:02 PM Finding code in output started
+12/22/2020 06:56:02 PM Finding code in output started
+12/22/2020 06:56:03 PM Finding code in output started
+12/22/2020 06:56:03 PM Finding code in output started
+12/22/2020 06:56:03 PM Finding code in output started
+12/22/2020 06:56:03 PM Exiting due to failed precheck
+12/22/2020 06:57:53 PM deployement Started on 2020:12:22-18:57:53
+12/22/2020 06:57:53 PM Load inventory in JSON format 2020:12:22-18:57:53
+12/22/2020 06:57:53 PM Successfully Loaded inventory in JSON format 2020:12:22-18:57:53
+12/22/2020 06:57:53 PM Ansible writer started
+12/22/2020 06:57:53 PM Load Credentials as extra vars 2020:12:22-18:57:53
+12/22/2020 06:57:53 PM Loaded Credentials as extra vars 2020:12:22-18:57:53
+12/22/2020 06:57:53 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:57:57 PM Finding code in output started
+12/22/2020 06:57:57 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 06:58:00 PM Finding code in output started
+12/22/2020 07:13:05 PM ansible-playbook -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini --e interaction_id=78uj /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/zabbix_script_copy.yml  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:13:05 PM Test zabbix sa Preecheck function called
+12/22/2020 07:13:05 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:13:05 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:13:05 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:13:05 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:13:09 PM Finding code in output started
+12/22/2020 07:13:09 PM Finding code in output started
+12/22/2020 07:13:09 PM Finding code in output started
+12/22/2020 07:13:09 PM Finding code in output started
+12/22/2020 07:13:09 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_install_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:13:09 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_install_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:13:09 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:13:09 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_install_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:13:59 PM Finding code in output started
+12/22/2020 07:15:11 PM Finding code in output started
+12/22/2020 07:17:46 PM Finding code in output started
+12/22/2020 07:17:57 PM Finding code in output started
+12/22/2020 07:17:57 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_config_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:19:40 PM Finding code in output started
+12/22/2020 07:19:40 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_config_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:20:49 PM Finding code in output started
+12/22/2020 07:20:49 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_config_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:20:56 PM Finding code in output started
+12/22/2020 07:20:56 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_config_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:21:01 PM Finding code in output started
+12/22/2020 07:21:01 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_ssl_configuration  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:21:20 PM Finding code in output started
+12/22/2020 07:21:20 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_onboarding  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:21:25 PM Finding code in output started
+12/22/2020 07:21:25 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_create_group_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:21:30 PM Finding code in output started
+12/22/2020 07:21:30 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_create_user_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:21:34 PM Finding code in output started
+12/22/2020 07:21:34 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_smtp_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:21:37 PM Finding code in output started
+12/22/2020 07:21:37 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_heartbeat  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:21:41 PM Finding code in output started
+12/22/2020 07:21:41 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_createhost  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:21:45 PM Finding code in output started
+12/22/2020 07:21:45 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_change_admin  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:21:50 PM Finding code in output started
+12/22/2020 07:21:50 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/schedule_script_in_cron  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:21:52 PM Finding code in output started
+12/22/2020 07:21:52 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_agent  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:21:52 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_agent  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:21:52 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_agent  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:22:05 PM Finding code in output started
+12/22/2020 07:22:07 PM Finding code in output started
+12/22/2020 07:22:12 PM Finding code in output started
+12/22/2020 07:22:12 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_postcheck  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:22:12 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_postcheck  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:22:12 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_postcheck  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:22:15 PM Finding code in output started
+12/22/2020 07:22:16 PM Finding code in output started
+12/22/2020 07:22:16 PM Finding code in output started
+12/22/2020 07:22:16 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_postcheck  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:22:35 PM Finding code in output started
+12/22/2020 07:24:12 PM deployement Started on 2020:12:22-19:24:12
+12/22/2020 07:24:12 PM Load inventory in JSON format 2020:12:22-19:24:12
+12/22/2020 07:24:12 PM Successfully Loaded inventory in JSON format 2020:12:22-19:24:12
+12/22/2020 07:24:12 PM Ansible writer started
+12/22/2020 07:24:12 PM Load Credentials as extra vars 2020:12:22-19:24:12
+12/22/2020 07:24:12 PM Loaded Credentials as extra vars 2020:12:22-19:24:12
+12/22/2020 07:24:12 PM Rollback Initiated
+12/22/2020 07:24:12 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:25:44 PM Finding code in output started
+12/22/2020 07:25:44 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:26:55 PM Finding code in output started
+12/22/2020 07:26:55 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:29:56 PM Finding code in output started
+12/22/2020 07:29:56 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:30:28 PM Finding code in output started
+12/22/2020 07:30:28 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:31:50 PM Finding code in output started
+12/22/2020 07:31:50 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:32:11 PM Finding code in output started
+12/22/2020 07:32:11 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:32:12 PM Finding code in output started
+12/22/2020 07:32:12 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 07:32:14 PM Finding code in output started
+12/22/2020 09:01:22 PM deployement Started on 2020:12:22-21:01:22
+12/22/2020 09:01:22 PM Load inventory in JSON format 2020:12:22-21:01:22
+12/22/2020 09:01:22 PM Successfully Loaded inventory in JSON format 2020:12:22-21:01:22
+12/22/2020 09:01:22 PM Ansible writer started
+12/22/2020 09:01:22 PM Load Credentials as extra vars 2020:12:22-21:01:22
+12/22/2020 09:01:22 PM Loaded Credentials as extra vars 2020:12:22-21:01:22
+12/22/2020 09:01:22 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:01:26 PM Finding code in output started
+12/22/2020 09:01:26 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:01:29 PM Finding code in output started
+12/22/2020 09:02:33 PM deployement Started on 2020:12:22-21:02:33
+12/22/2020 09:02:33 PM Load inventory in JSON format 2020:12:22-21:02:33
+12/22/2020 09:02:33 PM Successfully Loaded inventory in JSON format 2020:12:22-21:02:33
+12/22/2020 09:02:33 PM Ansible writer started
+12/22/2020 09:02:33 PM Load Credentials as extra vars 2020:12:22-21:02:33
+12/22/2020 09:02:33 PM Loaded Credentials as extra vars 2020:12:22-21:02:33
+12/22/2020 09:02:33 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:02:36 PM Finding code in output started
+12/22/2020 09:02:36 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:02:39 PM Finding code in output started
+12/22/2020 09:17:55 PM ansible-playbook -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini --e interaction_id=78uj /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/zabbix_script_copy_ha.yml  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:17:55 PM Test zabbix ha Preecheck function called
+12/22/2020 09:17:55 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:17:55 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:17:55 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:17:55 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:17:55 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:17:55 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:17:55 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:17:55 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:17:58 PM Finding code in output started
+12/22/2020 09:18:00 PM Finding code in output started
+12/22/2020 09:18:01 PM Finding code in output started
+12/22/2020 09:18:01 PM Finding code in output started
+12/22/2020 09:18:01 PM Finding code in output started
+12/22/2020 09:18:01 PM Finding code in output started
+12/22/2020 09:18:01 PM Finding code in output started
+12/22/2020 09:18:01 PM Finding code in output started
+12/22/2020 09:24:46 PM deployement Started on 2020:12:22-21:24:46
+12/22/2020 09:24:46 PM Load inventory in JSON format 2020:12:22-21:24:46
+12/22/2020 09:24:46 PM Successfully Loaded inventory in JSON format 2020:12:22-21:24:46
+12/22/2020 09:24:46 PM Ansible writer started
+12/22/2020 09:24:46 PM Load Credentials as extra vars 2020:12:22-21:24:46
+12/22/2020 09:24:46 PM Loaded Credentials as extra vars 2020:12:22-21:24:46
+12/22/2020 09:24:46 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:24:49 PM Finding code in output started
+12/22/2020 09:24:49 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:24:52 PM Finding code in output started
+12/22/2020 09:40:00 PM ansible-playbook -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini --e interaction_id=78uj /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/zabbix_script_copy_ha.yml  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:00 PM Test zabbix ha Preecheck function called
+12/22/2020 09:40:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:03 PM Finding code in output started
+12/22/2020 09:40:04 PM Finding code in output started
+12/22/2020 09:40:04 PM Finding code in output started
+12/22/2020 09:40:05 PM Finding code in output started
+12/22/2020 09:40:05 PM Finding code in output started
+12/22/2020 09:40:05 PM Finding code in output started
+12/22/2020 09:40:05 PM Finding code in output started
+12/22/2020 09:40:05 PM Finding code in output started
+12/22/2020 09:40:05 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_install_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:05 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_install_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:05 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_sa  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:05 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:05 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_install_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:05 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_install_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:40:07 PM Finding code in output started
+12/22/2020 09:40:35 PM Finding code in output started
+12/22/2020 09:40:59 PM Finding code in output started
+12/22/2020 09:41:00 PM Finding code in output started
+12/22/2020 09:41:54 PM Finding code in output started
+12/22/2020 09:41:58 PM Finding code in output started
+12/22/2020 09:41:58 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_install_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:47:21 PM Finding code in output started
+12/22/2020 09:47:21 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_install_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:50:26 PM Finding code in output started
+12/22/2020 09:50:26 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_config_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:50:31 PM Finding code in output started
+12/22/2020 09:50:31 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:50:34 PM Finding code in output started
+12/22/2020 09:50:34 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_mysql_DB_Master_Config  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:50:38 PM Finding code in output started
+12/22/2020 09:50:38 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_mysql_DB_Slave_Config  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:50:40 PM Finding code in output started
+12/22/2020 09:50:40 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_config_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:51:05 PM Finding code in output started
+12/22/2020 09:51:05 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_config_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:54:36 PM deployement Started on 2020:12:22-21:54:36
+12/22/2020 09:54:36 PM Load inventory in JSON format 2020:12:22-21:54:36
+12/22/2020 09:54:36 PM Successfully Loaded inventory in JSON format 2020:12:22-21:54:36
+12/22/2020 09:54:36 PM Ansible writer started
+12/22/2020 09:54:36 PM Load Credentials as extra vars 2020:12:22-21:54:36
+12/22/2020 09:54:36 PM Loaded Credentials as extra vars 2020:12:22-21:54:36
+12/22/2020 09:54:36 PM Rollback Initiated
+12/22/2020 09:54:36 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:55:54 PM Finding code in output started
+12/22/2020 09:55:54 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 09:57:21 PM Finding code in output started
+12/22/2020 09:57:21 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:00:06 PM Finding code in output started
+12/22/2020 10:00:06 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:00:09 PM Finding code in output started
+12/22/2020 10:00:09 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:01:23 PM Finding code in output started
+12/22/2020 10:01:23 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:02:00 PM Finding code in output started
+12/22/2020 10:02:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:02:09 PM Finding code in output started
+12/22/2020 10:02:09 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Secondary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_rollback  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/22/2020 10:02:10 PM Finding code in output started
+12/23/2020 01:46:41 PM deployement Started on 2020:12:23-13:46:41
+12/23/2020 01:46:41 PM Load inventory in JSON format 2020:12:23-13:46:41
+12/23/2020 01:46:41 PM Successfully Loaded inventory in JSON format 2020:12:23-13:46:41
+12/23/2020 01:46:41 PM Ansible writer started
+12/23/2020 01:46:41 PM Load Credentials as extra vars 2020:12:23-13:46:41
+12/23/2020 01:46:41 PM Loaded Credentials as extra vars 2020:12:23-13:46:41
+12/23/2020 01:46:41 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/23/2020 01:46:45 PM Finding code in output started
+12/23/2020 01:46:45 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini localhost --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_alerts_secondary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/23/2020 01:46:48 PM Finding code in output started
+12/23/2020 02:02:00 PM ansible-playbook -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini --e interaction_id=78uj /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/zabbix_script_copy.yml  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/23/2020 02:02:00 PM Test zabbix sa Preecheck function called
+12/23/2020 02:02:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_pre_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/23/2020 02:02:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_DB_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_db_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/23/2020 02:02:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Proxy_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_proxy_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/23/2020 02:02:00 PM ansible -i /home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/ansible_host.ini Primary_Core_Zabbix --e interaction_id=78uj -m include_role -a name=/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/Ansible-Playbooks/roles/zabbix_core_precheck_primary  --extra-vars "@/home/satish/gitSrc/ideploy_mtaas/iDeploy/tools/zabbix_5.0/zabbix/Input/zabbix_extra_vars.yml"
+12/23/2020 02:02:03 PM Finding code in output started
+12/23/2020 02:02:04 PM Finding code in output started
+12/23/2020 02:02:04 PM Finding code in output started
+12/23/2020 02:02:04 PM Finding code in output started

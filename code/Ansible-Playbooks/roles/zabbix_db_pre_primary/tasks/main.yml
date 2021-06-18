@@ -1,0 +1,17 @@
+###
+#
+# This playbook role is running on host 'Primary_DB_Zabbix'
+# @host: Primary_DB_Zabbix 
+#
+# @author: Mohd Danish
+# @date:
+# @version:
+#
+###
+   # - setup: 
+   # - include_tasks: cleanup.yml
+   # - include_tasks: api.yml
+   
+# including tasks zabbix_db_pre_primary.yml
+   - include_tasks: zabbix_db_pre_primary.yml
+   

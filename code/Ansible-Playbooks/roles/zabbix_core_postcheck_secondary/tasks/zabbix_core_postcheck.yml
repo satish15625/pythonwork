@@ -1,0 +1,118 @@
+###
+#
+# This playbook is zabbix_core_precheck_primary.yml playbook which is getting executed
+# @host: Primary_Core_Zabbix
+# 
+# @author: Ashok
+# @date:
+# @version:
+#
+###
+
+   # - include_tasks: api.yml
+   - setup:
+   - name: Get Environment variable Admin_Root
+     set_fact:
+       Admin_Root: "{{lookup('env','Admin_Root') }}"
+
+#proxy server ip
+   - name: Print the name of core node
+     set_fact:
+       Proxy_Server: "{{ item }}"
+     with_items:
+       - "{{ groups ['Secondary_Proxy_Zabbix'] }}"
+
+# Executing Zabbix_App_prereq.py for Zabbix Pre-Check App install
+   - name: Zabbix Post-Check App install
+     command: python3.7 Zabbix_Core_Postcheck.py "Secondary" "{{ Proxy_Server }}"
+     args:
+       chdir: "{{ ansible_env.Admin_Root }}/zabbix/Bin/Post_Check"
+
+# Added this for rollback ---------------------------------
+     register: result
+     ignore_errors: yes
+
+   - set_fact:
+       pyresult: "3rr0rC0d3[00{{result.rc}}]"
+
+   - debug:
+       msg: "{{result.stdout_lines[0]}}"
+
+   - set_fact:
+       pyresult: "{{result.stdout_lines[0]}}"
+     when: result.rc == 0
+
+
+
+
+
+
+
+
+
+
+
+     ## storing all files from output folder to a found_files variable
+#   - name: Get files in a folder
+#     find:
+#       paths: "{{Admin_Root}}/zabbix/Output"
+#     register: found_files
+
+## storing the latest output file name to 'latest_file' variable
+#   - name: Get latest log file - App
+#     set_fact:
+#       latest_file: "{{ found_files.files | sort(attribute='mtime',reverse=true) | first }}"
+#
+## priting the latest output file name
+#   - name: Print Lastest file name
+#     debug:
+#       var: latest_file.path
+#
+## separating the latest output file's content with comma
+## and storing the first column result to 'zabbiz_log' variable
+#   - name: Read the latest log file - App
+#     shell: cat {{ latest_file.path }} | awk 'BEGIN {FS = ","} ; {print $1}'
+#     register: zabbiz_log
+#
+## priting the 'zabbiz_log' variable value
+#   - name: Displaying the status of Zabbix pre-requisites - App
+#     debug:
+#       var:   zabbiz_log.stdout_lines
+#
+## copying the 'zabbiz_log' variable value to 'zabbix_pre_pri.result' file
+#   - name: Saving the Zabbix test results - App
+#     copy:
+#       content: "{{ zabbiz_log.stdout_lines }}"
+#       dest: /tmp/zabbix_pre.result
+#       force: yes
+#
+## creating a json string for zabbix_pre_pri.result and register in zabbix_pre_post
+#   - name: Create a json string for status - App
+#     shell: cat /tmp/zabbix_pre.result | tr -d '"' | tr -d '[' |tr -d ']'
+#     register: zabbix_pre_post
+#
+## Storing the output of shell command in  zabbix_app_pf variable
+#   - name: Validate the Zabbix App  precheck results
+#     shell: cat /tmp/zabbix_pre.result | grep -i fail
+#     register: zabbix_app_pf
+#     failed_when: false
+#
+##
+## creating a file zabbix_app_p1 if found 0 in zabbix_app_pf.rc (result check)
+##
+#   - name: Create a Marker in case of App precheck failures
+#     file:
+#       path: /tmp/cleanup/zabbix_app_p1
+#       state: touch
+#     delegate_to: localhost
+#     when: zabbix_app_pf.rc == 0
+##
+# ending the playbook if found 0 in zabbix_app_pf variable
+#
+##
+   # - meta: end_play
+   #   when: zabbix_app_pf.rc == 0 
+
+# including install playbook if not found 0 in zabbix_app_pf variable
+   # - include_tasks: zabbix_core_install.yml
+     # when: zabbix_app_pf.rc != 0 

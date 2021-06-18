@@ -1,0 +1,194 @@
+###
+#
+# This is main.yml playbook for zabbix_cluster role.
+# @host: Primary_Core_Zabbix,Secondary_Core_Zabbix
+# 
+# @author: Mohd Danish
+# @date:
+# @version:
+#
+###
+
+    - setup:
+    - name: Get Environment variable Admin_Root
+      set_fact:
+        Admin_Root: "{{lookup('env','Admin_Root') }}"
+    - debug:
+        msg: "{{Admin_Root}}"        
+
+# copy the data of 'newname.txt' in '/etc/hosts' file
+    - name: copy the data
+      blockinfile:
+        dest: /etc/hosts
+        block: "{{lookup('file','{{Admin_Root}}/newname.txt')}}"
+        insertafter: EOF
+
+    # - name: execute command
+    #   command: sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/sysconfig/selinux
+    #   resgister: result
+
+# Enable Repository 'rhel-ha-for-rhel-7-server-rpms'   
+    - name: Enable Repository
+      rhsm_repository:
+        name: "{{item}}"
+      with_items:
+        - rhel-ha-for-rhel-7-server-rpms
+
+# The high availability package is not part of CentOS repo so you will need epel-release repo
+# install epel
+    # - name: install epel-release
+    #   yum:
+    #    name: epel-release
+    #    state: latest 
+
+# disable selinux
+    - name: disable selinux
+      selinux:
+        state: disabled
+
+
+# # Firwall reload 
+#     - name: reload service firewalld
+#       systemd:
+#        name: firewalld
+#        state: start
+
+# enable HA service
+    - name: enable HA service
+      firewalld:
+       service: high-availability
+       state: enabled
+       permanent: yes
+
+# enable http service
+    - name: enable http service
+      firewalld:
+       service: http
+       state: enabled
+       permanent: yes
+
+# add 10051 tcp port
+    - name: add 10051 tcp port
+      firewalld:
+       port: 10051/tcp
+       state: enabled
+       permanent: yes
+
+# add 10050 tcp port
+    - name: add 10050 tcp port
+      firewalld:
+       port: 10050/tcp
+       state: enabled
+       permanent: yes
+
+# add 2224 tcp port
+    - name: add 2224 tcp port
+      firewalld:
+       port: 2224/tcp
+       state: enabled
+       permanent: yes
+
+# install pacemaker
+    - name: install pacemaker
+      yum:
+       name: pacemaker
+       state: latest
+
+# install pcs 
+    - name: install pcs 
+      yum:
+       name: pcs
+       state: latest  
+
+# configuring hacluster
+    - name: Shell hacluster config
+      shell: echo "cluster123" | passwd --stdin hacluster  
+
+# enabling pcsd
+    - name: service pcsd start and enable
+      service:
+        name: pcsd 
+        state: started
+        enabled: yes      
+    # - name: update password for HAcluster user
+    #   user:
+    #     name: hacluster
+    #     password: cluster123
+    #   become: yes
+
+# Print the name of First cluster Node
+    - name: Print the name of First cluster Node
+      set_fact:
+        cluster_node1: "{{ item }}" 
+      with_items:
+       - "{{ groups['Primary_Core_Zabbix'] }}"
+      register: cluster_node1
+    # - set_fact:
+    #     cluster_primary: "{{cluster_node1.ansible_facts.name[0]}}"
+    # - debug:
+    #      msg: ".......{{cluster_primary}}........................"
+
+# Print the name of Second cluster Node
+    - name: Print the name of Second cluster Node
+      set_fact:
+        cluster_node2: "{{ item }}" 
+      with_items:
+       - "{{ groups['Secondary_Core_Zabbix'] }}"
+      register: cluster_node2
+
+# Kick-start pace maker
+    - name: Kick-start pace maker
+      shell: pcs cluster auth -u hacluster -p cluster123 "{{cluster_node1}}"  "{{ cluster_node2}}" 
+      delegate_to: "{{cluster_node1}}"
+
+# setting up cluster named zabbixserver
+    - name: setting up cluster named zabbixserver
+      shell: pcs cluster setup --force --name zabbixserver "{{cluster_node1}}"  "{{ cluster_node2}}"
+      delegate_to: "{{cluster_node1}}"
+      # when:  ansible_hostname ==  cluster_primary
+
+# Starting cluster service
+    - name: Starting cluster service
+      shell: pcs cluster start --all
+      delegate_to: "{{cluster_node1}}"   
+
+# enabling pcsd 
+    - name: service pcsd start and enable
+      service:
+        name: pcsd 
+        state: started
+        enabled: yes
+
+# enable corosync daemon
+    - name: enable corosync daemon
+      systemd:
+        name: corosync
+        state: started
+        enabled: yes
+
+# enable pacemaker daemon
+    - name: enable pacemaker daemon
+      systemd:
+        name: pacemaker
+        state: started
+        enabled: yes
+
+# Check status of cluster
+    - name:  Check status of cluster
+      shell: pcs status cluster
+      
+ # Added this for rollback ---------------------------------
+   #   register: result
+   #   ignore_errors: yes
+
+   # - set_fact:
+   #     pyresult: "3rr0rC0d3[00{{result.rc}}]"
+
+   # - debug:
+   #     msg: "{{result.stdout_lines[0]}}"
+
+   # - set_fact:
+   #     pyresult: "{{result.stdout_lines[0]}}"
+   #   when: result.rc == 0
+
+       

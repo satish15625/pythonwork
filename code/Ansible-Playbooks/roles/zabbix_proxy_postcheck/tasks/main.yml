@@ -1,0 +1,18 @@
+###
+#
+# This playbook is including zabbix_proxy_precheck_primary.yml playbook
+# @host: Primary_Proxy_Zabbix
+# 
+# @author: Mohd Danish
+# @date:
+# @version: 1
+#
+###
+
+
+ # - debug:
+ #    msg: "in main.yml"
+ # - include_tasks: pre_flight.yml
+
+# including tasks zabbix_proxy_precheck_primary.yml
+ - include_tasks: zabbix_proxy_postcheck.yml

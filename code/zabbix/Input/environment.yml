@@ -1,0 +1,9 @@
+DB_IP: "10.1.150.46",
+DB_USER: "root",
+DB_PASSWORD: "India123!",
+DB_NAME: "satishdb",
+ORG_ID: "1",
+url: "10.1.150.46:9020",
+api_username: "JWTUser",
+api_password: "ÜÁÂÖ¥¤§",
+Environment: "NonProd"

@@ -1,0 +1,128 @@
+###
+#
+# This playbook is creating zabbix folder and copying the files in that folder
+#
+# 
+# @author: Ashok
+# @date:
+# @version: 1
+#
+###
+
+# Running on all primary zabbix components
+- name: zabbix folder creation and data copy for all componenets
+  hosts:
+    - Primary_Core_Zabbix
+    - Primary_DB_Zabbix
+    - Primary_Proxy_Zabbix
+    - Primary_DB_Proxy_Zabbix
+    - Secondary_Core_Zabbix
+    - Secondary_DB_Zabbix
+    - Secondary_Proxy_Zabbix
+    - Secondary_DB_Proxy_Zabbix
+  
+  tasks:
+###
+# getting the Admin_Root env variable value from remote server
+# creating zabbix folder on remote server
+### 
+    
+    - set_fact: 
+        Admin_Root: "{{lookup('env','Admin_Root')}}"
+    - debug:
+        msg: "{{Admin_Root}}"
+    
+# need to change this .yml file (include moogsoft specific)
+    - set_fact:   
+        api_file: "{{ lookup('file','{{Admin_Root}}/iDeploy/tools/zabbix_5.0/zabbix/Input/global.json') | from_json }}"
+
+    - debug:
+        msg: "{{api_file}}"
+
+    - set_fact:
+         url: "{{api_file['connection_details']['url']}}"
+         api_username: "{{api_file['connection_details']['api_username']}}"
+         api_password: "{{api_file['connection_details']['api_password']}}"
+         Environment: "{{api_file['Environment']}}"
+
+    - debug:
+        msg: "{{url}}"
+
+
+# making connection to deployement portal using API and store response in token variable
+    - name: Authenticate task
+      uri:
+       url: "http://{{url}}/api/ansible/authenticate"
+       method: POST
+       headers:
+         Content-Type: "application/json"
+       body: '{"username": "{{api_username}}", "password": "{{api_password}}"}'
+       return_content: yes
+
+      register: token
+
+# parsing that token variable into json format
+    - set_fact:
+        pass_token: "{{token.json.token}}" 
+    - command: hostname
+      register: hubname
+    - set_fact:
+        hostname: "{{hubname.stdout_lines[0]}}"    
+
+# sending intiating log status over API call to deployment portal
+    - name: send log
+      uri:
+       url: "http://{{url}}/api/ansible/DeploymentStatusLog"
+       method: POST
+       headers:
+         Content-Type: "application/json"
+         Authorization: "Bearer {{pass_token}}"
+       body: '[{"ToolName": "Zabbix","Component": "All Component","ServerFQDN": "{{hostname}}","ServerType": "Primary","Environment": "{{Environment}}","Stage": "1","Status":"1","StatusReason":"Zabbix script copying started"}]| to_json'
+       body_type: json
+       return_content: yes
+
+    - name: zabbix Folder creation
+      file:
+        path: "{{ ansible_env.Admin_Root}}"
+        state: directory
+      become: true
+    - debug:
+        msg: " folder created successfully"
+
+# copying the moogsoft scripts to remote localtion
+    - name: copy zabbix scripts
+      copy:
+        src: "{{Admin_Root}}/iDeploy/tools/zabbix_5.0/zabbix"
+        dest: "{{ ansible_env.Admin_Root}}/"
+    - debug:
+         msg: "data copied successfully"
+
+###
+# getting the Admin_Root env variable value from remote server
+# creating results folder on remote server
+###
+    - name: zabbix results Folder creation
+      file:
+        path: "{{ ansible_env.Admin_Root}}/zabbix/results"
+        state: directory
+
+###
+# getting the Admin_Root env variable value from remote server
+# creating cleanupfile folder on remote server
+###
+ #   - name: Moogsoft cleanupfile Folder creation
+ #     file:
+ #       path: "{{ ansible_env.Admin_Root}}/cleanupfile"
+ #       state: directory
+
+# sending Passed log status over API call to deployment portal
+    - name: send log
+      uri:
+       url: "http://{{url}}/api/ansible/DeploymentStatusLog"
+       method: POST
+       headers:
+         Content-Type: "application/json"
+         Authorization: "Bearer {{pass_token}}"
+       body: '[{"ToolName": "Zabbix","Component": "All Component","ServerFQDN": "{{hostname}}","ServerType": "Primary","Environment": "{{Environment}}","Stage": "1","Status":"2","StatusReason":"Zabbix scripts copied successfully"}]| to_json'
+       body_type: json
+       return_content: yes

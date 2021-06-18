@@ -1,0 +1,115 @@
+###
+#
+# This is the zabbix_proxy_install_primary.yml playbook which is getting executed
+# @host: Primary_Proxy_Zabbix
+# 
+# @author: Mohd Danish
+# @date:
+# @version: 1
+#
+###   
+
+
+   # - include_tasks: api.yml
+   - setup:
+   - name: Get Environment variable Admin_Root
+     set_fact:
+       Admin_Root: "{{lookup('env','Admin_Root') }}"
+   - debug:
+      msg: "{{Admin_Root}}"
+
+# including vars environment.yml
+   - include_vars: "{{Admin_Root}}/Portal_Scripts/Bin/environment.yml"
+   - name: Get Environment variable Admin_Root
+     set_fact:
+       Admin_Root: "{{lookup('env','Admin_Root') }}"
+   - debug:
+      msg: "{{Admin_Root}}"
+
+# creating folder structure for Zabbix Proxy install
+   - name: Create folder structure for Zabbix App install
+     file:
+       path: "{{Admin_Root}}/zabbix-env/Zabbix_Proxy/"
+       state: directory
+
+# Copy the Zabbix install scripts for Proxy install
+   - name: Copy the Zabbix  Pre-Check scripts for App install
+     copy:
+       src: "{{Admin_Root}}/Zabbix_Proxy/"
+       dest: "{{Admin_Root}}/zabbix-env/Zabbix_Proxy"      
+   # - name: Print the name of DB node
+   #   set_fact:
+   #     db_ip: "{{ item }}" 
+   #   with_items:
+   #     - "{{ groups ['Primary_DB_Zabbix'] }}"
+
+# saving the value of 'Primary_DB_Proxy_Zabbix' to 'db_ip' variable
+   - name: Print the name of DB node
+     set_fact:
+       db_ip: "{{ item }}" 
+     with_items:
+       - "{{ groups ['Primary_DB_Proxy_Zabbix'] }}"
+
+# saving the value of 'Primary_VIP_Zabbix' to 'Zabbix_Server' variable
+   - set_fact:
+       Zabbix_Server: "{{item}}"
+     with_items:
+       - "{{groups['Primary_VIP_Zabbix']}}"        
+
+# Executing proxyinstall.py for Zabbix proxy install
+   - command: python proxyinstall.py "{{ db_ip }}" "{{ Zabbix_Server }}" "{{Environment}}"
+     args:
+       chdir: "{{Admin_Root}}/zabbix-env/Zabbix_Proxy/Bin"
+
+# storing all files from output folder to a found_files variable
+   - name: Get files in a folder
+     find:
+       paths: "{{Admin_Root}}/zabbix-env/Zabbix_Proxy/Output"
+     register: found_files
+
+# storing the latest output file name to 'latest_file' variable
+   - name: Get latest file
+     set_fact:
+       latest_file: "{{ found_files.files | sort(attribute='mtime',reverse=true) | first }}"
+
+# priting the latest output file name
+   - name: Print Lastest file name
+     debug:
+       var: latest_file.path
+
+# separating the latest output file's content with comma 
+# and storing the first column result to 'zabbiz_log' variable
+   - name: Read the latest log file
+     shell: cat {{ latest_file.path }} | awk 'BEGIN {FS = ","} ; {print $1}'
+     register: zabbiz_log
+
+# priting the 'zabbiz_log' variable value
+   - name: Displaying the status of Zabbix pre-requisites
+     debug:
+       var:   zabbiz_log.stdout_lines
+
+# copying the 'zabbiz_log' variable value to 'zabbix_install_prxy.result' file
+   - name: Saving the Zabbix test results
+     copy:
+       content: "{{ zabbiz_log.stdout_lines }}"
+       dest: "{{Admin_Root}}/zabbix-env/Zabbix_Proxy/zabbix_install_prxy.result"
+       force: yes
+
+# creating a json string for zabbix_install_prxy.result and register in zabbix_pre_post
+   - name: Create a json string for status
+     shell: cat /tmp/zabbix_install_prxy.result | tr -d '"' | tr -d '[' |tr -d ']'
+     register: zabbix_pre_post
+
+# Storing the output of shell command in  zabbix_prxy_ins variable
+   - name: Validate the Zabbix Proxy Install results
+     shell: cat "{{Admin_Root}}/zabbix-env/Zabbix_Proxy/zabbix_install_prxy.result" | grep -i fail
+     failed_when: false
+     register: zabbix_prxy_ins
+ 
+# creating a file zabbix_prxy if found 0 in zabbix_prxy_ins.rc (result check)
+   - name: Create a Marker file in case of Zabbix App install failure  
+     file:
+       path: /tmp/cleanup/zabbix_prxy
+       state: touch
+     delegate_to: localhost
+     when: zabbix_prxy_ins.rc == 0

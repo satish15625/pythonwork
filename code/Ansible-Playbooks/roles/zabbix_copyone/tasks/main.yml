@@ -1,0 +1,51 @@
+###
+#
+# This is main.yml playbook for zabbix_copyone role.
+# @host: Primary_Core_Zabbix
+# 
+# @author: Mohd Danish
+# @date:
+# @version:
+#
+###
+
+    - setup:
+    - set_fact:
+        var1: "{{ansible_default_ipv4.address}} {{ansible_hostname}}"
+    - debug:
+       msg: "{{var1}}"
+
+# Get Environment variable Admin_Root
+    - name: Get Environment variable Admin_Root
+      set_fact:
+        Admin_Root: "{{lookup('env','Admin_Root') }}"
+    - debug:
+       msg: "{{Admin_Root}}"    
+
+# creating newname.txt file
+    - name: file creation
+      file:
+       dest: "{{Admin_Root}}/newname.txt"
+       state: touch
+      delegate_to: localhost
+
+# inserting ip and hostname of 'Primary_Core_Zabbix' server in "newname.txt" file
+    - lineinfile:
+        path: "{{Admin_Root}}/newname.txt"
+        line : "{{ var1 }}"
+        insertafter: EOF
+      delegate_to: localhost
+# Added this for rollback ---------------------------------
+   #   register: result
+   #   ignore_errors: yes
+
+   # - set_fact:
+   #     pyresult: "3rr0rC0d3[00{{result.rc}}]"
+
+   # - debug:
+   #     msg: "{{result.stdout_lines[0]}}"
+
+   # - set_fact:
+   #     pyresult: "{{result.stdout_lines[0]}}"
+   #   when: result.rc == 0
+

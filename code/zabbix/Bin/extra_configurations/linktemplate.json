@@ -1,0 +1,9 @@
+{
+    "ip": "10.1.150.39",
+    "templatename": "Auto fuzzytime trigger for Zabbix Proxy",
+    "hostgroup":"Zabbix servers",
+    "host":"Zabbix server"
+}
+
+
+

@@ -1,0 +1,12 @@
+Hi ${PERSON_NAME},
+
+Following services are not working on Windows host ptest0023
+
+STOPPED_SERVICES
+SNMPTRAP
+vds
+
+
+UNAVAILABLE_SERVICES
+
+Thanks.

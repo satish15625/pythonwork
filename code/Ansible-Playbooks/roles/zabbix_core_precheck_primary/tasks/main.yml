@@ -1,0 +1,17 @@
+###
+#
+#  
+# This playbook is including zabbix_core_precheck_primary.yml playbook
+# @host: Primary_Core_Zabbix
+#
+# 
+# @author: Mohd Danish
+# @date:
+# @version:
+#
+###
+ # - debug:
+ #    msg: "in main.yml"
+ 
+ # - include_tasks: zabbix_core_precheck_primary.yml
+ - include_tasks: zabbix_core_precheck_primary.yml

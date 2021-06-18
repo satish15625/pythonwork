@@ -1,0 +1,4 @@
+ - debug:
+    msg: "in main.yml"
+ # - include_tasks: pre_flight.yml
+ - include_tasks: zabbix_proxy_install.yml

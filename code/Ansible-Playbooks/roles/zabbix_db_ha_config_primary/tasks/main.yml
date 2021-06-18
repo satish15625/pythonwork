@@ -1,0 +1,16 @@
+###
+#
+# This playbook is including zabbix_db_ha_config_primary.yml playbook
+# @host: Primary_DB_Zabbix
+# 
+# @author:sai
+# @date:
+# @version: 1
+#
+###
+
+   # - include_tasks: cleanup.yml
+   # - include_tasks: api.yml
+
+# including task zabbix_db_ha_config_primary.yml
+  - include_tasks: zabbix_db_ha_config_primary.yml   

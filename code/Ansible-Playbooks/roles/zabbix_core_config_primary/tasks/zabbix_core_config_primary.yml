@@ -1,0 +1,94 @@
+###
+#
+# This is the zabbix_core_install_sa.yml playbook which is getting executed
+# @host: 
+# 
+# @author: Ashok
+# @date:
+# @version: 1
+#
+### 
+
+   # - include_tasks: api.yml
+   - setup:
+   - name: Get Environment variable Admin_Root
+     set_fact:
+       Admin_Root: "{{lookup('env','Admin_Root') }}"
+   - debug:
+      msg: "{{Admin_Root}}"
+
+#   - include_vars: "{{Admin_Root}}/Portal_Scripts/Bin/environment.yml"
+   # - debug:
+   #     msg: Zabbix DB precheck passed on "{{ ansible_hostname }}"
+
+ #  - name: Print the name of DB node
+ #    set_fact:
+ #      db_ip: "{{ groups['Primary_DB_Zabbix'][0] }}"
+     #with_items:
+      # - "{{ groups['Primary_DB_Zabbix'] }}"
+     #register: db_ipa
+# saving the value of 'Primary_DB_Zabbix' to 'db_ip' variable
+   - name: Print the name of DB node
+     set_fact:
+       db_ip: "{{ item }}"
+     with_items:
+       - "{{ groups ['Primary_DB_Zabbix'] }}"
+   - command: python3.7 Zabbix_Core_Config.py "Primary"  "{{ db_ip }}"
+     args:
+       chdir: "{{ ansible_env.Admin_Root }}/zabbix/Bin/Configurations"
+
+# Added this for rollback ---------------------------------
+     register: result
+     ignore_errors: yes
+
+   - set_fact:
+       pyresult: "3rr0rC0d3[00{{result.rc}}]"
+
+   - debug:
+       msg: "{{result.stdout_lines[0]}}"
+
+   - set_fact:
+       pyresult: "{{result.stdout_lines[0]}}"
+     when: result.rc == 0
+
+#   - name: Get files in a folder
+#     find:
+#       paths: "{{Admin_Root}}/zabbix-env/Zabbix_Core_StandAlone/Output"
+#     register: found_files
+#
+#   - name: Get latest file
+#     set_fact:
+#       latest_file: "{{ found_files.files | sort(attribute='mtime',reverse=true) | first }}"
+#   - name: Print Lastest file name
+#     debug:
+#       var: latest_file.path
+#
+#   - name: Read the latest log file
+#     shell: cat {{ latest_file.path }} | awk 'BEGIN {FS = ","} ; {print $1}'
+#     register: zabbiz_log
+#
+#   - name: Displaying the status of Zabbix pre-requisites
+#     debug:
+#       var:   zabbiz_log.stdout_lines
+#   - name: Saving the Zabbix test results
+#     copy:
+#       content: "{{ zabbiz_log.stdout_lines }}"
+#       dest: /tmp/zabbix_pre.result
+#       force: yes
+#
+#   - name: Create a json string for status
+#     shell: cat /tmp/zabbix_pre.result | tr -d '"' | tr -d '[' |tr -d ']'
+#     register: zabbix_pre_post
+#
+#   - name: Validate the Zabbix App Install results
+#     shell: cat /tmp/zabbix_pre.result | grep -i fail
+#     failed_when: false
+#     register: zabbix_app_ins
+#
+#
+#   - name: Create a Marker file in case of Zabbix App install failure
+#     file:
+#       path: /tmp/cleanup/zabbix_app_p2
+#       state: touch
+#     delegate_to: localhost
+#     when: zabbix_app_ins.rc == 0
