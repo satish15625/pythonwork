@@ -1,0 +1,56 @@
+###
+#
+# This is the zabbix_core_configuration.yml playbook which is getting executed
+# @host: Primary_Core_Zabbix
+# 
+# @author: Ashok
+# @date:  04-May-2020
+# @version: V.1
+#
+###
+  
+  - setup:
+  - set_fact: 
+      Admin_Root: "{{lookup('env','Admin_Root')}}"
+#  - include_vars: "{{Admin_Root}}/Portal_Scripts/Bin/environment.yml"
+#core server ip
+  - name: Print the name of core node
+    set_fact:
+      Zabbix_Server: "{{ item }}"
+    with_items:
+      - "{{ groups ['Primary_Core_Zabbix'] }}"
+
+#proxy server ip
+  # - name: Print the name of core node
+  #   set_fact:
+  #     Proxy_Server: "{{ item }}"
+  #   with_items:
+  #     - "{{ groups ['Primary_Proxy_Zabbix'] }}"
+
+## executing script for zabbix core ssl configuration
+#  - name: Running script for zabbix core ssl configuration
+#    command: python3.7 Zabbix_SSL_Config.py "Primary"
+#    args:
+#      chdir: "{{ ansible_env.Admin_Root }}/zabbix/Bin/Configurations"
+
+#onboard
+  - name: Running script for onboard
+    command: python3.7 Zabbix_Create_Host.py "Primary"
+    args:
+      chdir: "{{ ansible_env.Admin_Root }}/zabbix/Bin/Configurations"
+
+# Added this for rollback ---------------------------------
+    register: result
+    ignore_errors: yes
+
+  - set_fact:
+      pyresult: "3rr0rC0d3[00{{result.rc}}]"
+
+  - debug:
+      msg: "{{result.stdout_lines[0]}}"
+
+  - set_fact:
+      pyresult: "{{result.stdout_lines[0]}}"
+    when: result.rc == 0
+
+

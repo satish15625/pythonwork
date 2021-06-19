@@ -1,0 +1,2 @@
+- name: execute command on zabbix agents
+  include_tasks: zabbix_agent_install.yml

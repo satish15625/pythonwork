@@ -1,0 +1,35 @@
+###
+#
+# This is the zabbix_core_precheck_sa.yml playbook which is getting executed
+# @host: Primary_Core_Zabbix
+# 
+# @author: Mohd Danish
+# @date:
+# @version: 1
+#
+### 
+
+   # - include_tasks: api.yml
+
+   - setup:
+   - name: Get Environment variable Admin_Root
+     set_fact:
+       Admin_Root: "{{lookup('env','Admin_Root') }}"
+   - debug:
+      msg: "{{Admin_Root}}"
+   - include_vars: "{{Admin_Root}}/Portal_Scripts/Bin/environment.yml"
+
+   - debug:
+       msg: This is Zabbix app server node named -  "{{ ansible_hostname }}"
+   
+   - name: Print the name of DB node
+     set_fact:
+       vip: "{{item}}" 
+     with_items:
+       - "{{ groups['Primary_VIP_Zabbix'] }}"
+
+   - name: Zabbix create user
+     command: python zabbix_smtp.py "{{vip}}"
+     args:
+       chdir: "{{Admin_Root}}/Zabbix_Alerts/Bin"
+   

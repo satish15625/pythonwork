@@ -1,0 +1,70 @@
+
+{% extends 'dashboard/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <body class="sb-nav-fixed">
+
+        {% include 'dashboard/nav.html' %}
+     
+
+            <div id="layoutSidenav_content">
+                <!-- <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item active">List</li>
+                </ol> -->
+                <div class="card mb-4">
+                    <div class="card-header"><i class="fas fa-table mr-1"></i>Emp Detals   || <a href="/add">Add New </a></div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th> SR.NO</th>
+                                        <th>EMP ID</th>
+                                        <th>EMP NAME</th>
+                                        <th>EMP EMila</th>
+                                        <th>Contact </th>
+                                        <th>Edit</th>
+                                        <th>Update</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>SR.NO</th>
+                                        <th>EMP ID</th>
+                                        <th>EMP NAME</th>
+                                        <th>EMP EMila</th>
+                                        <th>Contact </th>
+                                        <th>Edit</th>
+                                        <th>Update</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    {% for employee in employees %}
+                                        <tr>
+                                            <td>{{employee.id}}</td>
+                                            <td>{{employee.eid}}</td>
+                                            <td>{{employee.ename}}</td>
+                                            <td>{{employee.eemail}}</td>
+                                            <td>{{employee.econtact}}</td>
+                                            <td><a href="/edit/{{ employee.id }}"><i class="fa fa-edit" style="font-size:15px"></i></a> </td>
+                                            <td> <a href="/delete/{{ employee.id }}"><i class="fa fa-trash" style="font-size:15px"></i></a></td>
+                                        </tr>
+                                    {% endfor %}
+                                   
+                        
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                {% include 'dashboard/footer.html' %}
+            </div>
+        </div>
+        
+
+{% endblock %}
+
+

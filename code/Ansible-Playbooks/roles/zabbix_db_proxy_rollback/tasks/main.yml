@@ -1,0 +1,3 @@
+---
+# tasks file for zabbix_core_rollback
+  - include_tasks: zabbix_db_proxy_rollback.yml

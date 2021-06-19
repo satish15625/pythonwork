@@ -1,0 +1,15 @@
+###
+#
+# This playbook is including zabbix_core_precheck_sa.yml playbook
+# @host: Primary_Core_Zabbix
+# 
+# @author: Mohd Danish
+# @date:
+# @version: 1
+#
+### 
+
+ # - include_tasks: pre_flight.yml
+
+# including tasks zabbix_core_precheck_sa.yml
+ - include_tasks: zabbix_smtp_configure.yml

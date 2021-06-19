@@ -1,0 +1,57 @@
+###
+#
+# This is the zabbix_core_precheck_sa.yml playbook which is getting executed
+# @host: Primary_Core_Zabbix
+# 
+# @author: sai
+# @date:
+# @version: 1
+#
+### 
+
+   # - include_tasks: api.yml
+
+   - setup:
+   - name: Get Environment variable Admin_Root
+     set_fact:
+       Admin_Root: "{{lookup('env','Admin_Root') }}"
+   - debug:
+      msg: "{{Admin_Root}}"
+   # - include_vars: "{{Admin_Root}}/Portal_Scripts/Bin/environment.yml"
+
+   # - debug:
+   #     msg: This is Zabbix app server node named -  "{{ ansible_hostname }}"
+   
+   # - name: Print the name of DB node
+   #   set_fact:
+   #     vip: "{{item}}" 
+   #   with_items:
+   #     - "{{ groups['Primary_VIP_Zabbix'] }}"
+
+   # - name: Primary proxy
+   #   set_fact:
+   #     primary_proxy: "{{item}}" 
+   #   with_items:
+   #     - "{{ groups['Primary_Proxy_Zabbix'] }}"
+
+   - name: Zabbix create user
+     command: python3.7 Zabbix_Onboarding.py "Primary"
+     args:
+       chdir: "{{ ansible_env.Admin_Root }}/zabbix/Bin/Configurations"
+
+# Added this for rollback ---------------------------------
+     register: result
+     ignore_errors: yes
+
+   - set_fact:
+       pyresult: "3rr0rC0d3[00{{result.rc}}]"
+
+   - debug:
+       msg: "{{result.stdout_lines[0]}}"
+
+   - set_fact:
+       pyresult: "{{result.stdout_lines[0]}}"
+     when: result.rc == 0
+
+      
+   

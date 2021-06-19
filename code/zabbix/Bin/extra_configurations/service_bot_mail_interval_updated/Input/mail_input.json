@@ -1,0 +1,6 @@
+{
+"mymail":"mtaasdev@gmail.com",
+"password":"Password@123",
+"smtphost":"smtp.gmail.com",
+"smtp_port":"465"
+}

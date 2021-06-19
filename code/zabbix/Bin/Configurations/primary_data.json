@@ -1,0 +1,9 @@
+{
+    "databasename": "zabbix",
+    "username": "zabbix",
+    "password": "Password@12",
+    "replication_User": "replication_secdbuser", 
+    "replication_Pass" :"Secondary@1234",
+    "master_user" : "replication_pridbuser",
+    "master_password" : "Primary@1234"
+}

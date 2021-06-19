@@ -1,0 +1,77 @@
+{
+   "requirement":{
+      "DB Proxy":{
+         "cpu":"2",
+         "memory":"2",
+         "os_version":[
+            "7.0","7.1","7.2","7.3","7.4","7.5","7.6","7.7","7.8","7.9"
+         ],
+         "disk":"10",
+          "ports":[
+            "22"
+         ]
+
+      },
+      "Proxy":{
+         "cpu":"2",
+         "memory":"2",
+         "os_version":[
+            "7.0","7.1","7.2","7.3","7.4","7.5","7.6","7.7","7.8","7.9"
+         ],
+         "disk":"10",
+         "ports":[
+            "22"
+         ]
+      },
+      "DB":{
+         "cpu":"2",
+         "memory":"2",
+         "os_version":[
+            "7.0","7.1","7.2","7.3","7.4","7.5","7.6","7.7","7.8","7.9"
+         ],
+         "disk":"10",
+         "ports":[
+            "22"
+         ]
+      },
+      "Core":{
+         "cpu":"2",
+         "memory":"2",
+         "os_version":[
+            "7.0","7.1","7.2","7.3","7.4","7.5","7.6","7.7","7.8","7.9"
+         ],
+         "disk":"10",
+         "ports":[
+            "22"
+         ]
+      }
+      
+   },
+   "Environment":"Prod",
+   "db_creds": {
+      "username": "root",
+      "password": "Password@12"
+   },
+   "Timezone": "Asia/Kolkata",
+  "smtp_details":{
+
+      "smtp_server":"smtp.gmail.com",
+      "smtp_helo"  : "gmail.com",
+      "smtp_email" : "mtaasdev@gmail.com",
+      "smtp_port":"587",
+      "username" : "mtaasdev@gmail.com",
+      "passwd" : "Password@123",
+      "smtp_authentication" : 1,
+      "smtp_security" : 1
+   },
+   "host_creds": {
+      "tmp_name" : "Template HEARTBEAT-  Proxy Primary",
+      "hostgroup": "Zabbix servers"
+   },
+   "connection_details":{
+      "url":"10.1.150.46:9020",
+      "api_username":"JWTUser",
+      "api_password":"ÜÁÂÖ¥¤§"
+   },
+   "new_admin_password" : "testing123"
+}

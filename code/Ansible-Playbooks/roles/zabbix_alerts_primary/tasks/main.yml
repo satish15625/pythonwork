@@ -1,0 +1,59 @@
+###
+#
+# This playbook is executing zabbix_alerts_primary.py script
+# @host: localhost
+# 
+# @author: Monika Nagpal
+# @date:
+# @version: 1
+#
+###
+
+   - setup:
+     become: false
+# priting the interaction id 
+   - name: debug
+     debug:
+       msg: '{{ interaction_id }}'
+
+   - set_fact: 
+       Admin_Root: "{{lookup('env','Admin_Root')}}"
+   - debug:
+       msg: "{{Admin_Root}}"
+
+
+# storing the 'Primary_DB_Zabbix' group value to 'db_ip' variable
+   - name: Print the name of DB node
+     set_fact:
+       db_ip: "{{item}}" 
+     with_items:
+       - "{{ groups['Primary_DB_Zabbix'] }}"
+
+# storing the 'Primary_Proxy_Zabbix' group value to 'proxy_ip' variable
+   - name: Print the name of Proxy node
+     set_fact:
+       proxy_ip: "{{item}}" 
+     with_items:
+       - "{{ groups['Primary_Proxy_Zabbix'] }}"  
+
+# storing the 'Primary_Core_Zabbix' group value to 'core_ip' variable
+   - name: Print the name of Core node
+     set_fact:
+       core_ip: "{{item}}" 
+     with_items:
+       - "{{ groups['Primary_Core_Zabbix'] }}"
+
+# storing the 'Primary_DB_Proxy_Zabbix' group value to 'proxydb_ip' variable
+   - name: Print the name of Proxy DB node
+     set_fact:
+       proxydb_ip: "{{item}}" 
+     with_items:
+       - "{{ groups['Primary_DB_Proxy_Zabbix'] }}"
+
+   - name: Zabbix Alert initiation
+     command: python Zabbix_alerts_primary.py "Primary" "{{ core_ip }}"  "{{ db_ip }}"  "{{ proxy_ip }}"  "{{ proxydb_ip }}"
+     args:
+       chdir: "{{Admin_Root}}/iDeploy/tools/zabbix_5.0/zabbix/Bin/Pre_Check"
+     become: false
+   - debug:
+        msg: "Script on primary server executed successfully"

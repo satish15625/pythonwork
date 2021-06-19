@@ -1,0 +1,11 @@
+ - name: Cleanup  a temporary folder
+   file:
+     path: /tmp/cleanup
+     state: absent
+   delegate_to: localhost
+
+ - name: Recreate a temporary folder
+   file:
+     path: /tmp/cleanup
+     state: directory
+   delegate_to: localhost

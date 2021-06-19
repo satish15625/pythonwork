@@ -1,0 +1,11 @@
+###
+#
+# This playbook is including zabbix_ssl_configuration.yml playbook
+# 
+# @author: Prateek Srivastava
+# @date:
+# @version: 1
+#
+###    
+
+ - include_tasks: zabbix_ssl_configuration.yml

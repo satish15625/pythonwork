@@ -1,0 +1,10 @@
+---
+# tasks file for schedule_script_in_cron
+
+- name: "Configure script in crontab" 
+  cron:
+    name: "Service Bot For Selfhelth Monitoring."
+    minute: "*/2"
+    user: "dryice_deploy"
+    #job: "python3.7 /home/dryice_deploy/hello.py >> /home/dryice_deploy/hello.log"
+    job: "python3.7 /usr/share/mtaas/zabbix/Bin/extra_configurations/service_bot_mail_interval_updated/Bin/servicebot_class.py >> /usr/share/mtaas/zabbix/Logs/servicebot.log"

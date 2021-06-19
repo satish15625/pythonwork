@@ -1,0 +1,13 @@
+###
+#
+# This playbook is including zabbix_core_install_secondary.yml playbook
+# @host: 
+# 
+# @author: sai
+# @date:
+# @version: 1
+#
+### 
+
+ # - include_tasks: pre_flight.yml
+ - include_tasks: zabbix_core_config_secondary.yml

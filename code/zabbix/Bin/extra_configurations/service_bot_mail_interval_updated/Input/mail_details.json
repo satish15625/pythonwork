@@ -1,0 +1,10 @@
+{
+	"from_name" : "Test Notification",
+	"from" : "mtaasdev@gmail.com",
+	"to" : ["kumarsatish@hcl.com" ],
+	"cc" : [],
+	"smtpHost" : "smtp.gmail.com",
+	"smtp_port" : "465",
+	"email_duplication_time" : "1",
+	"passwd" : "Password@123"
+}

@@ -1,0 +1,72 @@
+###
+#
+# This is main.yml playbook for zabbix_first role.
+# @host: Primary_Core_Zabbix
+# 
+# @author: Mohd Danish
+# @date:
+# @version:
+#
+###
+
+- setup:
+
+# execute command on primary server
+- name: execute command on primary server
+  command: "pcs property set stonith-enabled=false"
+
+# disable quorum
+- name: disable quorum
+  command: "pcs property set no-quorum-policy=ignore"
+
+# saving value of 'Primary_VIP_Zabbix' to 'VIP' variable
+- name: get vip
+  set_fact:
+    VIP: "{{item}}"
+  with_items: 
+   - "{{groups['Primary_VIP_Zabbix']}}"
+
+# add VIP
+- name: add VIP
+  command: "pcs resource create cluster_vip ocf:heartbeat:IPaddr2 ip={{VIP}} cidr_netmask=24 op monitor interval=20s" 
+
+# create resource
+- name: create resource 
+  command: "pcs resource create zabbix_server systemd:zabbix-server op monitor interval=10s"
+
+##Root cause here
+
+# create apache resource
+- name: create apache resource
+  command: "pcs resource create httpd systemd:httpd op monitor interval=10s"
+
+# create a group resource
+- name: create a group resource
+  command: "pcs resource group add grp_zabbix_httpd zabbix_server httpd"
+
+# ensure resource group
+- name: ensure resource group
+  command: "pcs constraint colocation add grp_zabbix_httpd cluster_vip INFINITY"
+
+# cluster resource start or stop
+- name: cluster resource start or stop
+  command: "pcs constraint order cluster_vip then grp_zabbix_httpd"
+
+
+#Added on 7 aug 2020
+- name: zabbix config cache reload
+  command: "zabbix_server -R config_cache_reload"
+# Added this for rollback ---------------------------------
+   #   register: result
+   #   ignore_errors: yes
+
+   # - set_fact:
+   #     pyresult: "3rr0rC0d3[00{{result.rc}}]"
+
+   # - debug:
+   #     msg: "{{result.stdout_lines[0]}}"
+
+   # - set_fact:
+   #     pyresult: "{{result.stdout_lines[0]}}"
+   #   when: result.rc == 0
+

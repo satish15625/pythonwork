@@ -1,0 +1,43 @@
+###
+#
+# This is the zabbix_proxy_rollback.yml playbook which is getting executed
+
+# 
+# @author: Ashok
+# @date:
+# @version: 1
+#
+###
+
+   - setup:
+   - set_fact: 
+       Admin_Root: "{{lookup('env','Admin_Root')}}"
+
+   - name: Copy the zabbix rollback scripts
+     copy:
+       src: "{{Admin_Root}}/iDeploy/tools/zabbix_5.0/rollback" 
+       dest: "{{ansible_env.Admin_Root}}/zabbix"
+       
+
+   - name: zabbix rollback execution 
+     command: python3.7 zabbix_db_proxy_rollback.py
+     args:
+       chdir: "{{ansible_env.Admin_Root}}/zabbix/rollback"
+     register: rollback_result
+# executing zabbix_proxy_rollback.py for moogsoft  core uninstallation     
+   # - name: zabbix rollback execution 
+   #   command: python zabbix_proxy_rollback.py
+   #   args:
+   #     chdir: "{{ansible_env.Admin_Root}}/zabbix/rollback"
+   #   register: rollback_result
+
+   - debug:
+       var: "{{rollback_result}}"
+   
+   - debug:
+       msg: "Rollback Successful"
+     when: rollback_result.stdout == "true"
+
+   - debug:
+       msg: "Rollback Failed"
+     when: rollback_result.stdout == "false"
