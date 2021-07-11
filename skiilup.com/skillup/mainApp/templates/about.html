@@ -26,7 +26,7 @@ License URL: http://groundCoding.com
 		<div class="inner_breadcrumb">
 			<ul class="short_ls">
 				<li>
-					<a href="index.html">Home</a>
+					<a href="/">Home</a>
 					<span>| |</span>
 				</li>
 				<li>About</li>
@@ -41,6 +41,9 @@ License URL: http://groundCoding.com
 			<div class="abt-img">
 				<h3 class="sub-w3ls-headf white-clrf">Shortly about Grounding Coaching Sessions.</h3>
 			</div>
+		
+			
+
 			<div class="abtf-info">
 				<div class="about-grids">
 					<h5>Why choose us</h5>
@@ -60,7 +63,44 @@ License URL: http://groundCoding.com
 						Aenean vel elementum lectus, sit amet euismod lorem.</p>
 				</div>
 			</div>
+			<br>
+			<table class="table">
+				<thead class="thead-dark">
+				  <tr>
+					<th scope="col">id</th>
+					<th scope="col">Name</th>
+					<th scope="col">Email</th>
+					<th scope="col">Mobile</th>
+					<th scope="col">Position</th>
+				  </tr>
+				</thead>
+				<tbody>
+					{% for n in d %}
+				  <tr>
+					<th scope="row">{{n.id}}</th>
+					<td>{{n.name}}</td>
+					<td>{{n.email}}</td>
+					<td>{{n.mobile}}</td>
+					<td>{{n.position}}</td>
+				  </tr>
+				  {%endfor%}
+				  
+				</tbody>
+			  </table>
+
+
+			  <br> 
+			  <p> Api Data</p>
+			  {% for n in nn %}
+			  <P>{{n.name}}
+				{%endfor%}
+			</P>
+			  </P>
+			  
+			  
 		</div>
+
+		
 	</div>
 	<!--//about-top-->
 

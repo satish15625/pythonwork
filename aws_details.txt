@@ -1,0 +1,7 @@
+email id : developerkumar0@gmail.com
+pass: Password12@#
+ssh -i "aws_ssh_key.pem" ec2-user@ec2-34-201-17-93.compute-1.amazonaws.com
+
+google cloud 
+developerkumar0@gmail.com
+pass: Password12@#

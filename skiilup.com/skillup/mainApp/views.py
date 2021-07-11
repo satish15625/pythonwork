@@ -1,6 +1,9 @@
+
 from django.templatetags.static import static
 from django.shortcuts import render 
-from django.contrib import admin  
+from django.contrib import admin
+import requests
+from api.models import Employee
 
 # home page function
 def home(request):
@@ -37,7 +40,9 @@ def maths(request):
 
 
 def about(request):
-    return render(request, 'about.html', {})
+    emp = Employee.objects.all()
+    #print(emp)
+    return render(request, 'about.html', {'d':emp})
 
 def contact(request):
     return render(request, 'contact.html', {})
