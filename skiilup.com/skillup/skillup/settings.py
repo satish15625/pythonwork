@@ -4,9 +4,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-8zhj3icp0l%idqki09&%ppq0&-k5q7o--398@v0imc+%^)a9z!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 CORS_ORIGIN_ALLOW_ALL = True
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:8000',
@@ -145,6 +145,8 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'America/New_York'
 
 USE_I18N = True
+
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
